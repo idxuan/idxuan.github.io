@@ -190,14 +190,14 @@ git log
 * 获取远程仓库克隆
 
 ```sh
-git clone ssh://git@github.com/idxuanjun/GitTest
+git clone ssh://git@github.com/idxuan/GitTest
 ```
 
 * 增加远程仓库配置
 
 ```sh
-git remote add github git@github.com:idxuanjun/GitTest.git (推荐)
-git remote add github https://github.com/idxuanjun/GitTest.git
+git remote add github git@github.com:idxuan/GitTest.git (推荐)
+git remote add github https://github.com/idxuan/GitTest.git
 git remote add local file://f:/Repositories/git/conv_dict
 ```
 
@@ -216,7 +216,7 @@ git remote rename oldname newname
 * 修改远程仓库路径
 
 ```sh
-git remote set-url github git@github.com:idxuanjun/GitTest.git
+git remote set-url github git@github.com:idxuan/GitTest.git
 ```
 
 * 查询远程仓库配置
@@ -256,14 +256,14 @@ touch README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/idxuanjun/vimim_dict.git
+git remote add origin https://github.com/idxuan/vimim_dict.git
 git push -u origin master
 ```
 
 * Push an existing repository from the command line
 
 ```sh
-git remote add origin https://github.com/idxuanjun/vimim_dict.git
+git remote add origin https://github.com/idxuan/vimim_dict.git
 git push -u origin master
 ```
 
