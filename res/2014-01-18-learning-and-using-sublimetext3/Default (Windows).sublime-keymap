@@ -1,0 +1,212 @@
+//-----------------------------------------------------------------------------
+// @Author  : Xuan Jun (idxuanjun@qq.com)
+// @Link    : http://blog.csdn.net/idxuanjun
+// @Date    : 2013-11-18
+// @Version : 0.0.3
+// @Desc    : 我的Sublime Text 3 快捷键
+//-----------------------------------------------------------------------------
+
+[
+	//-------------------------------------------------------------------------
+	// 系统快捷键重新定义
+	//-------------------------------------------------------------------------
+	// 保存所有
+	{ "keys": ["ctrl+shift+s"], "command": "save_all" },
+	// 关闭所有
+	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+	{ "keys": ["ctrl+0"], "command": "close_all" },
+	// 重做
+	{ "keys": ["ctrl+alt+z"], "command": "redo" },
+	// 累加查找
+	{ "keys": ["alt+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
+	// 设置标记
+	{ "keys": ["alt+;", "alt+space"], "command": "set_mark" },
+	// 选择到标记
+	{ "keys": ["alt+;", "alt+a"], "command": "select_to_mark" },
+	// 删除到标记
+	{ "keys": ["alt+;", "alt+w"], "command": "delete_to_mark" },
+	// 交换标记
+	{ "keys": ["alt+;", "alt+x"], "command": "swap_with_mark" },
+	// 清除标记
+	{ "keys": ["alt+;", "alt+g"], "command": "clear_bookmarks", "args": {"name": "mark"} },
+	// 运行宏
+	{ "keys": ["ctrl+alt+q"], "command": "run_macro" },
+	// 自动完成
+	{ "keys": ["alt+space"], "command": "auto_complete" },
+	{ "keys": ["alt+space"], "comandm": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+
+	//-------------------------------------------------------------------------
+	// 自定义快捷键
+	//-------------------------------------------------------------------------
+   // 上下左右移动
+	{ "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+	// 上下左右移动并选择
+	{ "keys": ["alt+shift+h"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+l"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+	{ "keys": ["alt+shift+k"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+j"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+	// 屏幕按行上/下滚动
+	{ "keys": ["ctrl+alt+k"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+	{ "keys": ["ctrl+alt+j"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+	// 左右移动至上/下一个词
+	{ "keys": ["ctrl+alt+h"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["ctrl+alt+l"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+	// 左右移动至上/下一个词并选择
+	{ "keys": ["ctrl+shift+alt+h"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["ctrl+shift+alt+l"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+	// 格式化选择行
+	{ "keys": ["ctrl+="], "command": "reindent" },
+
+	//-------------------------------------------------------------------------
+	// 转换文件到UTF-8，需要“ConvertToUTF8”插件
+	//-------------------------------------------------------------------------
+	{ "keys": ["ctrl+shift+g"], "command": "convert_to_utf8", "args": {"encoding": "UTF-8", "stamp": "0" } },
+	// 是否开启显示多余空格（需要“TrailingSpacer”插件）
+	{ "keys": ["ctrl+alt+t"], "command": "toggle_trailing_spaces" },
+	// 删除多余空格（需要“TrailingSpacer”插件）
+	{ "keys": ["ctrl+alt+d"], "command": "delete_trailing_spaces" },
+
+	//-------------------------------------------------------------------------
+	// Go自动完成，需要“GoSublime”插件
+	//-------------------------------------------------------------------------
+	{
+		"keys": ["alt+space"],
+		"command": "auto_complete",
+		"args": {"disable_auto_insert": true, "api_completions_only": true, "next_completion_if_showing": false},
+		"context": [{ "key": "selector", "operator": "equal", "operand": "source.go" }]
+	},
+	{
+		"keys": ["ctrl+.", "alt+space"],
+		"command": "gs_show_call_tip",
+		"context": [{ "key": "selector", "operator": "equal", "operand": "source.go" }]
+	},
+	{
+		"keys": ["alt+space"],
+		"command": "auto_complete",
+		"args": {"disable_auto_insert": true, "api_completions_only": true, "next_completion_if_showing": false},
+		"context": [{ "key": "selector", "operator": "equal", "operand": "text.9o" }]
+	},
+
+	//-------------------------------------------------------------------------
+	// 新建模板文件，需要“SublimeTmpl”插件
+	//-------------------------------------------------------------------------
+	// 新建Java模板文件
+	{
+		"keys": ["ctrl+alt+shift+j"], "command": "sublime_tmpl",
+		"args": {"type": "java"}
+	},
+	// 新建Go模板文件
+	{
+		"keys": ["ctrl+alt+shift+g"], "command": "sublime_tmpl",
+		"args": {"type": "go"}
+	},
+	// 新建Python模板文件
+	{
+		"keys": ["ctrl+alt+shift+p"], "command": "sublime_tmpl",
+		"args": {"type": "python"}
+	},
+	// 新建Markdown模板文件
+	{
+		"keys": ["ctrl+alt+shift+m"], "command": "sublime_tmpl",
+		"args": {"type": "markdown"}
+	},
+
+	//-------------------------------------------------------------------------
+	// 高亮显示匹配的括号、引号和标签，需要"BracketHighlighter"插件
+	// 将ctrl+alt+super统一修改为ctrl+alt+shift
+	//-------------------------------------------------------------------------
+	// 移动到左括号
+	{
+		"keys": ["ctrl+alt+shift+up"],
+		"command": "bh_key",
+		"args":
+		{
+			"lines" : true,
+			"plugin":
+			{
+				"type": ["__all__"],
+				"command": "bh_modules.bracketselect",
+				"args": {"select": "left"}
+			}
+		}
+	},
+	// 移动到右括号
+	{
+		"keys": ["ctrl+alt+shift+down"],
+		"command": "bh_key",
+		"args":
+		{
+			"lines" : true,
+			"plugin":
+			{
+				"type": ["__all__"],
+				"command": "bh_modules.bracketselect",
+				"args": {"select": "right"}
+			}
+		}
+	},
+	// 选择括号内容
+	{
+		"keys": ["ctrl+alt+shift+s"],
+		"command": "bh_key",
+		"args":
+		{
+			"lines" : true,
+			"plugin":
+			{
+				"type": ["__all__"],
+				"command": "bh_modules.bracketselect"
+			}
+		}
+	},
+	// 从 HTML/XML 标签选择标签名 (both opening name and closing)
+	{
+		"keys": ["ctrl+alt+shift+t"],
+		"command": "bh_key",
+		"args":
+		{
+			"plugin":
+			{
+				"type": ["cfml", "html", "angle"],
+				"command": "bh_modules.tagnameselect"
+			}
+		}
+	},
+	// 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标右侧属性
+	{
+		"keys": ["ctrl+alt+shift+right"],
+		"command": "bh_key",
+		"args":
+		{
+			"plugin":
+			{
+				"type": ["cfml", "html", "angle"],
+				"command": "bh_modules.tagattrselect",
+				"args": {"direction": "right"}
+			}
+		}
+	},
+	// 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左侧属性
+	{
+		"keys": ["ctrl+alt+shift+left"],
+		"command": "bh_key",
+		"args":
+		{
+			"plugin":
+			{
+				"type": ["cfml", "html", "angle"],
+				"command": "bh_modules.tagattrselect",
+				"args": {"direction": "left"}
+			}
+		}
+	}
+]

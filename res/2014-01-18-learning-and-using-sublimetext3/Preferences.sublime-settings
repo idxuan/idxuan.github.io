@@ -1,0 +1,70 @@
+//-----------------------------------------------------------------------------
+// @Author  : Xuan Jun (idxuanjun@qq.com)
+// @Link    : http://blog.csdn.net/idxuanjun
+// @Date    : 2013-11-18
+// @Version : 0.0.2
+// @Desc    : 我的Sublime Text 3 配置
+//-----------------------------------------------------------------------------
+
+{
+    // 颜色主题（亮）
+    // "color_scheme"   : "Packages/Color Scheme - Default/IDLE.tmTheme",
+    // 颜色主题（暗）
+    // "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    // 颜色主题（亮，需要“theme soda”插件）
+    // "theme": "Soda Light 3.sublime-theme",
+    // "color_scheme": "Packages/User/Espresso Soda.tmTheme",
+    // 颜色主题（暗，需要“theme soda”插件）
+    "theme": "Soda Dark 3.sublime-theme",
+    "color_scheme": "Packages/User/Monokai Soda.tmTheme",
+    // 默认标签样式（需要“theme soda”插件）
+    "soda_classic_tabs": true,
+    // 侧边栏图标（需要“theme soda”插件）
+    "soda_folder_icons": true,
+    // 字体是我自己修改的字体，你可以修改成自己喜欢的或直接注释即可
+    "font_face"      : "YaHei Consolas HB",
+    // 字体大小
+    "font_size"      : 14,
+    // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
+    // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
+    // "directwrite" (Windows only)
+    "font_options": ["directwrite"],
+    // 高亮当前行
+    "highlight_line": true,
+      // 高亮已修改未保存文件标签
+    "highlight_modified_tabs": true,
+    // 滚动超过结束行
+    "scroll_past_end": false,
+    // Tab大小
+    "tab_size": 4,
+    // 转换Tab为空格
+    "translate_tabs_to_spaces": false,
+    // translate_tabs_to_spaces设置为true，Tab和Backspace的删除/插入作用于制表符宽度
+    // 否则作用于单个空格
+    "use_tab_stops": true,
+    // 设置为enabled时，在一个字符串间按Tab将插入一个制表符
+    // 设置为true时，按Tab会根据前后环境进行代码自动匹配填补
+    "tab_completion": true,
+    // 载入的时候检测制表符和空格
+    "detect_indentation": true,
+    // 是否自动换行，值为true，禁用水平滚动；值为false，水平滚动。
+    // 值为"auto"，需要加双引号，文件是源代码设置为false，否则true。
+    "word_wrap"      : true,
+    // 设置窗口内文字区域的宽度
+    "wrap_width"     : 0,
+    // 词的分符隔定义，加入中文符号
+    "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?，。：；‘’“”、？！￥…（）—《》「」『』【】",
+    // 自动完成开关
+    "auto_complete_triggers":
+    [
+        {
+            "characters": " ",
+            "selector": "text.html"
+        }
+    ],
+    // 要忽略的插件，需要重启
+    "ignored_packages":
+    [
+        "Vintage"
+    ]
+}
