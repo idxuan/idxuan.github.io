@@ -1,21 +1,17 @@
+# 禁用定制插件
 #safe: false
-#port: 4000
-baseurl: /
-url: http://localhost:4000
-#url: http://idxuan.github.io
-
+# 在发布文章时使用一个未来的日期
 future: true
+# 产生相关页面的索引
 #lsi: false
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://idxuan.github.io
+# 使用指定的基准网址来运行网站
+baseurl: /
+# 改变Jekyll服务的端口
+#port: 4000
+# 设置站点的网址，这对环境改变时很有用
+#url: http://localhost:4000
+url: http://idxuan.github.io
 
 title: 老轩的博客
 description: 老轩的生活点滴
@@ -56,7 +52,7 @@ links:
       external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
+#timezone: Asia/Shanghai
 highlighter: pygments
 #markdown: redcarpet
 #markdown: rdiscount
