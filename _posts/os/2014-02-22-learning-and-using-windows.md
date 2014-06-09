@@ -36,12 +36,10 @@ Windows 7
 
 * 通过增加注册表项，使右键菜单打开控制台（CMD）在当前目录：
 
-        {% highlight registry linenos=table %}
         Windows Registry Editor Version 5.00
 
         [HKEY_CLASSES_ROOT\Directory\shell\opencmd]
         @="打开用 CMD"
         [HKEY_CLASSES_ROOT\Directory\shell\opencmd\command]
         @="cmd.exe /k cd %1"
-        {% endhighlight %}
 
