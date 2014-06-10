@@ -9,10 +9,10 @@ comments: true
 share: true
 ---
 
-1. Golang 使用点滴
+Golang 使用点滴
 ------------------------
 
-### 1.1. mymysql调用提示错误
+### mymysql调用提示错误
 
 在日常工作中，应用程序不使用数据库的是越来越少了，学习用，也就不考虑太多了，直接MySQL的上手，Go语言MySQL数据库驱动选择的mymysql。但找了例子测试时，怎么都运行出错。
 
