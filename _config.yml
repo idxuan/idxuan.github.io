@@ -9,8 +9,16 @@ gems:        []
 #timezone: Asia/Shanghai
 encoding:    utf-8
 
-future:      true
-show_drafts: nil
+# 使用指定的基准网址来运行网站
+#baseurl: ""
+# Jekyll服务主机端口
+# host:        0.0.0.0
+#port: 4000
+# 设置站点的网址，这对环境改变时很有用
+# url: http://localhost:4000
+url: http://idxuan.github.io
+
+# show_drafts: nil
 limit_posts: 0
 highlighter: pygments
 
@@ -32,15 +40,7 @@ future: true
 # 产生相关页面的索引
 #lsi: false
 
-# 使用指定的基准网址来运行网站
-#baseurl: ""
-# Jekyll服务主机端口
-# host:        0.0.0.0
-#port: 4000
-# 设置站点的网址，这对环境改变时很有用
-# url: http://localhost:4000
-url: http://idxuan.github.io
-
+# markdown: maruku
 markdown: redcarpet
 # markdown: rdiscount
 # markdown: kramdown
@@ -86,7 +86,7 @@ description: 老轩的生活点滴
 disqus_shortname: idxuan
 
 # Owner/author information
-owner:
+author:
     name: 老轩
     avatar: avatar.jpg
     bio: "~~晒高楼的阳光~~ ~~吻唇角的残鬓~~ ~~弹易断的琴弦~~ ~~饮不醒的美酒~~"

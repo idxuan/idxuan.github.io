@@ -22,7 +22,7 @@ share: true
 
 配置文件中字体是我在网上找到的“雅黑+Consolas”编程字体，自己修改了一些不喜欢的地方，见下图。你可以变更配置文件为自己喜欢的或直接注释即可。
 
-![Sublime Text3字体图片](/res/2014-01-18-learning-and-using-sublimetext3/sublime-text3-full-screen.jpg "Sublime Text3字体图片")
+![Sublime Text3字体图片](/res/2014-01-18-learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
 
 
 1. Sublime Text 快捷键
@@ -39,9 +39,9 @@ share: true
 * **Ctrl+Shift+T**: 打开最后关闭的文件
 * **Ctrl+O**: 打开文件
 * **Ctrl+S**: 保存文件
-* ***Ctrl+Shift+S**: 另存文件（建议：保存所有文件）
+* **!Ctrl+Shift+S**: 另存文件（建议：保存所有文件）
 * **Ctrl+W**: 关闭文件
-* ***Ctrl+Shift+W**: 关闭窗口（建议：关闭所有文件）
+* **!Ctrl+Shift+W**: 关闭窗口（建议：关闭所有文件）
 * **Ctrl+K,Ctrl+B**: 开关侧栏
 * **F11**: 全屏
 * **Shift+F11**: 全屏免打扰模式（只显示当前编辑文件）
@@ -86,7 +86,7 @@ share: true
 ### 1.4. 编辑
 
 * **Ctrl+Z**: 恢复
-* ***Ctrl+Shift+Z**: 重做（建议：Ctrl+Alt+Z）
+* **!Ctrl+Shift+Z**: 重做（建议：Ctrl+Alt+Z）
 * **Ctrl+Y**: 重做或重复
 * **Ctrl+U**: 软撤销（可撤销光标移动）
 * **Ctrl+Shift+U**: 软重做（可重做光标移动）
@@ -119,7 +119,7 @@ share: true
 * **Ctrl+F**: 查找
 * **Ctrl+H**: 查找替换
 * **Ctrl+Shift+F**: 查找或替换，可选文件夹或过滤器
-* ***Ctrl+I**: 累加查找（建议：Alt+I）
+* **!Ctrl+I**: 累加查找（建议：Alt+I）
 * **F3**: 查找下一个
 * **Shift+F3**: 查找上一个
 
@@ -141,15 +141,15 @@ share: true
 
 ### 1.8. 标记
 
-* ***Ctrl+K, Ctrl+Space**: 设置标记（建议：Alt+;,Alt+Space）
-* ***Ctrl+K, Ctrl+A**: 从光标位置选择至标记（建议：Alt+;,Alt+A）
-* ***Ctrl+K, Ctrl+W**: 从光标位置删除至标记（建议：Alt+;,Alt+W）
-* ***Ctrl+K, Ctrl+X**: 光标位置交换标记（建议：Alt+;,Alt+X）
-* ***Ctrl+K, Ctrl+G**: 清除标记（建议：Alt+;,Alt+G）
+* **!Ctrl+K, Ctrl+Space**: 设置标记（建议：Alt+;,Alt+Space）
+* **!Ctrl+K, Ctrl+A**: 从光标位置选择至标记（建议：Alt+;,Alt+A）
+* **!Ctrl+K, Ctrl+W**: 从光标位置删除至标记（建议：Alt+;,Alt+W）
+* **!Ctrl+K, Ctrl+X**: 光标位置交换标记（建议：Alt+;,Alt+X）
+* **!Ctrl+K, Ctrl+G**: 清除标记（建议：Alt+;,Alt+G）
 
 ### 1.9. 代码
 
-* ***Ctrl+Space**: 自动完成，重复选择下一提示（建议：Alt+Space）
+* **!Ctrl+Space**: 自动完成，重复选择下一提示（建议：Alt+Space）
 * **Ctrl+/**: 行注释
 * **Ctrl+Shift+/**: 块注释
 * **Ctrl+Shift+[**: 折叠当前
@@ -169,7 +169,7 @@ share: true
 ### 1.11. 宏
 
 * **Ctrl+Q**: 开关宏记录
-* ***Ctrl+Shift+Q**: 运行宏（建议：Ctrl+Alt+Q）
+* **!Ctrl+Shift+Q**: 运行宏（建议：Ctrl+Alt+Q）
 
 ### 1.12. 拼写检查
 
@@ -179,29 +179,29 @@ share: true
 
 ### 1.13. 自定义快捷键
 
-* ***Alt+[H,J,K,L]**: 上下左右移动
-* ***Alt+Shift+[H,J,K,L]**: 上下左右移动并选择
-* ***Ctrl+Alt+[J,K]**: 屏幕按行上/下滚动
-* ***Ctrl+Alt+[H,L]**: 左右移动至上/下一个词
-* ***Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
-* ***Ctrl+=**: 格式化选择行
-* ***Alt+;,Alt+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
+* **!Alt+[H,J,K,L]**: 上下左右移动
+* **!Alt+Shift+[H,J,K,L]**: 上下左右移动并选择
+* **!Ctrl+Alt+[J,K]**: 屏幕按行上/下滚动
+* **!Ctrl+Alt+[H,L]**: 左右移动至上/下一个词
+* **!Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
+* **!Ctrl+=**: 格式化选择行
+* **!Alt+;,Alt+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
 ### 1.14. 插件"BracketHighlighter"常用快捷键
 
 原快捷键前缀ctrl+alt+super修改为ctrl+alt+shift
 
-* ***Ctrl+Alt+Shift+[Up, Down]**: 移动到左/右括号
-* ***Ctrl+Alt+Shift+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
-* ***Ctrl+Alt+Shift+S**: 选择括号内容
-* ***Ctrl+Alt+Shift+T**: 从HTML/XML标签选择标签名称
+* **!Ctrl+Alt+Shift+[Up, Down]**: 移动到左/右括号
+* **!Ctrl+Alt+Shift+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
+* **!Ctrl+Alt+Shift+S**: 选择括号内容
+* **!Ctrl+Alt+Shift+T**: 从HTML/XML标签选择标签名称
 
 ### 1.15. 插件"TrailingSpaces"常用快捷键
 
 原快捷键前缀ctrl+shift修改为ctrl+alt
 
-* ***Ctrl+Alt+T**: 开关显示多余空格
-* ***Ctrl+Alt+D**: 删除多余空格
+* **!Ctrl+Alt+T**: 开关显示多余空格
+* **!Ctrl+Alt+D**: 删除多余空格
 
 ### 1.16. 插件"DeleteBlankLines"常用快捷键
 
@@ -211,7 +211,7 @@ share: true
 ### 1.17. 插件"ConvertToUTF8"常用快捷键
 
 * **Ctrl+Shift+C**: 转换文件到GBK
-* ***Ctrl+Shift+G**: 转换文件到UTF-8
+* **!Ctrl+Shift+G**: 转换文件到UTF-8
 
 ### 1.18. 插件"Alignment"常用快捷键
 
@@ -223,11 +223,11 @@ share: true
 
 ### 1.20. 插件"SublimeTmpl"常用快捷键
 
-* ***Ctrl+Alt+Shift+J**: 新建Java模板文件
-* ***Ctrl+Alt+Shift+G**: 新建Go模板文件
-* ***Ctrl+Alt+Shift+Y**: 新建Python模板文件
-* ***Ctrl+Alt+Shift+R**: 新建Ruby模板文件
-* ***Ctrl+Alt+Shift+M**: 新建Markdown模板文件
+* **!Ctrl+Alt+Shift+J**: 新建Java模板文件
+* **!Ctrl+Alt+Shift+G**: 新建Go模板文件
+* **!Ctrl+Alt+Shift+Y**: 新建Python模板文件
+* **!Ctrl+Alt+Shift+R**: 新建Ruby模板文件
+* **!Ctrl+Alt+Shift+M**: 新建Markdown模板文件
 
 
 ### 1.21. 插件"InsertNums"常用快捷键
@@ -238,7 +238,7 @@ share: true
 
 * `[A,B,C]` 表示A,B,C可选其一；
 * `Num` 表示阿拉伯数字;
-* `*` 表示自定义快捷键或不符合日常习惯建议修改。
+* `!` 前缀表示自定义快捷键或不符合日常习惯建议修改。
 
 2. Sublime Text 插件安装方式
 ----------------------------
@@ -293,41 +293,41 @@ share: true
 
 #### 1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
 
-    {% highlight bat %}
-    @ECHO OFF
+```bat
+@ECHO OFF
 
-    cd %~dp1
-    ECHO Compiling %~nx1.......
-    IF EXIST %~n1.class (
-        DEL %~n1.class
-    )
-    javac -encoding utf-8 %~nx1
-    IF EXIST %~n1.class (
-        ECHO -----------OUTPUT-----------
-        java %~n1
-    )
-    {% endhighlight %}
+cd %~dp1
+ECHO Compiling %~nx1.......
+IF EXIST %~n1.class (
+    DEL %~n1.class
+)
+javac -encoding utf-8 %~nx1
+IF EXIST %~n1.class (
+    ECHO -----------OUTPUT-----------
+    java %~n1
+)
+```
 
 注：“javac -encoding utf-8 %~nx1”的意义是指定源文件是“UTF-8”格式，如果你的源文件是其他格式，请修改或删除“-encoding utf-8”。
 
 #### 2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
 
-    {% highlight text %}
-    {
-        "shell_cmd": "runJava.bat \"$file\"",
-        "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-        "selector": "source.java",
-        "encoding": "gbk"
-    }
-    {% endhighlight %}
+```
+{
+    "shell_cmd": "runJava.bat \"$file\"",
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.java",
+    "encoding": "gbk"
+}
+```
 
 注：第一行的“runJava.bat”即上面的脚本文件，最后一行"encoding": "gbk"的意义是将输出编码定义为本地中文代码页。如果你编译运行其他程序是发生“[Decode error - output not utf-8]”错误，都可以用此方法解决问题。
 
 4. 本文相关下载资源
 -------------------
 
-* [下载我的快捷键设置](/res/2014-01-18-learning-and-using-sublimetext3/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
-* [下载我的参数配置](/res/2014-01-18-learning-and-using-sublimetext3/Preferences.sublime-settings "我的参数配置")。
-* [下载我的CSDN Blog插件](https://github.com/idxuanjun/ToCsdnBlog "我的CSDN Blog插件")。
+* [下载我的快捷键设置](/res/2014-01-18-learning-and-using-sublimetext/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
+* [下载我的参数配置](/res/2014-01-18-learning-and-using-sublimetext/Preferences.sublime-settings "我的参数配置")。
+* [下载我的CSDN Blog插件](https://github.com/idxuan/ToCsdnBlog "我的CSDN Blog插件")。
 因为我是用Markdown写的CSDN博客，但“Markdown Preview”插件生成的HTML代码段与CSDN博客支持的格式不一致，所以自己写了个插件转换一下。
 * [下载Package Control组件](https://sublime.wbond.net/installation "Package Control组件安装下载")

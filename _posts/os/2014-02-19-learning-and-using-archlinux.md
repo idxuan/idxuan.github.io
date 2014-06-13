@@ -14,19 +14,19 @@ share: true
 使用点滴
 --------
 
-* netctl
+### netctl
 
 有时候`interface`的名称不是`eth0`
 
-```sh
+```bash
 dmesg|grep -i rename
 ```
 
-* 静态地址
+### 静态地址
 
 输入命令：
 
-```sh
+```bash
 cp /etc/netctl/example/ethernet-static /etc/netctl/my_network
 vi my_network
 ```
@@ -44,9 +44,9 @@ Gateway='192.168.1.1'
 DNS=('192.168.1.1')
 ```
 
-* 字体包
+### 字体包
 
-```sh
+```bash
 # 字符终端使用这条命令即可
 fc-cache:fontconfig
 
