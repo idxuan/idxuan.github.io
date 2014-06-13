@@ -1,3 +1,30 @@
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+keep_files:  ['.git','.svn']
+gems:        []
+#timezone: Asia/Shanghai
+encoding:    utf-8
+
+future:      true
+show_drafts: nil
+limit_posts: 0
+highlighter: pygments
+
+relative_permalinks: true
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+#permalink: /:categories/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title.html
+
+paginate_path: 'page:num'
+paginate: 5
+
+excerpt_separator: "\n\n"
+
 # 禁用定制插件
 #safe: false
 # 在发布文章时使用一个未来的日期
@@ -6,12 +33,53 @@ future: true
 #lsi: false
 
 # 使用指定的基准网址来运行网站
-#baseurl: /
-# 改变Jekyll服务的端口
+#baseurl: ""
+# Jekyll服务主机端口
+# host:        0.0.0.0
 #port: 4000
 # 设置站点的网址，这对环境改变时很有用
-# url: http://localhost:4000
-url: http://idxuan.github.io
+url: http://localhost:4000
+# url: http://idxuan.github.io
+
+markdown: redcarpet
+# markdown: rdiscount
+# markdown: kramdown
+markdown_ext: md
+textile_ext: textile
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+  fenced_code_blocks: true
+
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough", "autolink"]
+
+rdiscount:
+    extensions: []
+
+redcloth:
+    hard_breaks: true
+
+kramdown:
+    auto_ids: true
+    footnote_nr: 1
+    entity_output: as_char
+    toc_levels: 1..6
+    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    use_coderay: true
+    input: GFM
+
+    coderay:
+        coderay_wrap: div
+        coderay_line_numbers: nil
+        coderay_line_numbers_start: 1
+        coderay_tab_width: 4
+        coderay_bold_every: 10
+        coderay_css: class
 
 title: 老轩的博客
 description: 老轩的生活点滴
@@ -51,33 +119,3 @@ links:
       url: /feed.xml
       external: true
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-#timezone: Asia/Shanghai
-highlighter: pygments
-#markdown: redcarpet
-#markdown: rdiscount
-markdown: kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-#permalink: /:categories/:year/:month/:day/:title
-permalink: /blog/:year/:month/:day/:title
-
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-    auto_ids: true
-    footnote_nr: 1
-    entity_output: as_char
-    toc_levels: 1..6
-    use_coderay: true
-
-    coderay:
-        coderay_line_numbers: nil
-        coderay_line_numbers_start: 1
-        coderay_tab_width: 4
-        coderay_bold_every: 10
-        coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

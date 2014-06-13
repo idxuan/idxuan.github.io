@@ -2,11 +2,12 @@
 layout: post
 category: 工具
 title: Vim 学习及使用
-tagline: "把工作变成兴趣"
 tags : [Vim,文本编辑]
+image:
+  feature: feature.jpg
+comments: true
+share: true
 ---
-{% include JB/setup %}
-
 
 1. Vim 快捷键
 -----------------------
