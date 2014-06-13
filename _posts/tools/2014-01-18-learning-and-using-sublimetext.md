@@ -185,6 +185,7 @@ share: true
 * **!Ctrl+Alt+[H,L]**: 左右移动至上/下一个词
 * **!Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
 * **!Ctrl+=**: 格式化选择行
+* **!Ctrl+Alt+Shift+D**: 清除当前行
 * **!Alt+;,Alt+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
 ### 1.14. 插件"BracketHighlighter"常用快捷键
