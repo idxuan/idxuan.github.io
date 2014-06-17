@@ -23,5 +23,5 @@ image:
 
 #### 备注
 
-* 我在 `Github` 的源码 [Github](https://github.com/idxuanjun)
+* 我在 `Github` 的源码 [Github](https://github.com/idxuan)
 * 我在 `CSDN` 的博客 [CSDN](http://blog.csdn.net/idxuanjun)
