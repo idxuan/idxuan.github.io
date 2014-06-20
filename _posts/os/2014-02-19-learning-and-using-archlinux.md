@@ -16,7 +16,7 @@ share: true
 
 ### netctl
 
-有时候`interface`的名称不是`eth0`
+有时候 `interface` 的名称不是 `eth0`
 
 ```bash
 dmesg|grep -i rename
