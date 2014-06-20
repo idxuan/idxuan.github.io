@@ -106,10 +106,10 @@ ln -s /cygdrive/e/Downloads /dl
 ln -s /cygdrive/f/Repositories/git /git_repo
 ```
 
-### 5. 建立Windows环境变量：
+### 5. 修改Cygwin.bat文件，增加设置环境变量 `HOME`：
 
 ```cfg
-HOME=d:\Platform\home\BuXing
+set HOME=d:/UserData/LinuxHome/xuan
 ```
 
 右键菜单打开Cygwin在当前目录
@@ -131,9 +131,12 @@ Windows Registry Editor Version 5.00
 ```bat
 @echo off
 set _T=%*
+set HOME=d:/UserData/LinuxHome/xuan
 D:
-chdir D:\Platform\Cygwin\bin
+chdir d:/GSoft/Linux/Cygwin/bin
+
 bash --login -i
+REM mintty.exe -i /Cygwin-Terminal.ico -
 ```
 
 ### 3. 设置用户配置文件 `Cygwin\home\${UserName}\.bash_profile`，在最后增加：
