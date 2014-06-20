@@ -106,7 +106,7 @@ ln -s /cygdrive/e/Downloads /dl
 ln -s /cygdrive/f/Repositories/git /git_repo
 ```
 
-### 5. 修改Cygwin.bat文件，增加设置环境变量 `HOME`：
+### 5. 修改 `Cygwin.bat` 文件，增加设置环境变量 `HOME`：
 
 ```cfg
 set HOME=d:/UserData/LinuxHome/xuan
@@ -126,7 +126,7 @@ Windows Registry Editor Version 5.00
 @="d:\\Platform\\Cygwin\\Cygwin.bat %V"
 ```
 
-### 2. 修改Cygwin.bat文件，增加设置路径变量 `set _T=%*`：
+### 2. 修改 `Cygwin.bat` 文件，增加设置路径变量 `set _T=%*`：
 
 ```bat
 @echo off
