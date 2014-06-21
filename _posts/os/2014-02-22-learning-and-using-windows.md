@@ -9,9 +9,6 @@ comments: true
 share: true
 ---
 
-Windows 7
----------
-
 ### 设置库：
 使用“mlink”建立链接目录，避开系统盘。
 
