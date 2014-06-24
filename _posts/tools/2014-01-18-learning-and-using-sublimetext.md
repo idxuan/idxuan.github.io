@@ -22,7 +22,7 @@ share: true
 
 配置文件中字体是我在网上找到的“雅黑+Consolas”编程字体，自己修改了一些不喜欢的地方，见下图。你可以变更配置文件为自己喜欢的或直接注释即可。
 
-![Sublime Text3字体图片](/res/2014-01-18-learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
+![Sublime Text3字体图片](/res/learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
 
 
 1. Sublime Text 快捷键
@@ -327,8 +327,8 @@ IF EXIST %~n1.class (
 4. 本文相关下载资源
 -------------------
 
-* [下载我的快捷键设置](/res/2014-01-18-learning-and-using-sublimetext/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
-* [下载我的参数配置](/res/2014-01-18-learning-and-using-sublimetext/Preferences.sublime-settings "我的参数配置")。
+* [下载我的快捷键设置](/res/learning-and-using-sublimetext/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
+* [下载我的参数配置](/res/learning-and-using-sublimetext/Preferences.sublime-settings "我的参数配置")。
 * [下载我的CSDN Blog插件](https://github.com/idxuan/ToCsdnBlog "我的CSDN Blog插件")。
 因为我是用Markdown写的CSDN博客，但“Markdown Preview”插件生成的HTML代码段与CSDN博客支持的格式不一致，所以自己写了个插件转换一下。
 * [下载Package Control组件](https://sublime.wbond.net/installation "Package Control组件安装下载")

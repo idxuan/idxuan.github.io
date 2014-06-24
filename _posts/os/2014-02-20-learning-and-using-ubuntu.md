@@ -26,9 +26,9 @@ sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
 sudo apt-get install ibus-table python-ibus ibus-pinyin* ibus-***
 ```
 
-    * 拼音： `ibus-pinyin、ibus-sunpinyin、ibus-googlepinyin`；
-    * 五笔： `ibus-table-wubi`；
-    * 中州韵： `ibus-rime` 。
+*   拼音： `ibus-pinyin、ibus-sunpinyin、ibus-googlepinyin`；
+*   五笔： `ibus-table-wubi`；
+* 中州韵： `ibus-rime` 。
 
 ### 3. 设置默认输入法（可选，可能需要重启系统）：
 

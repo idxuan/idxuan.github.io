@@ -36,7 +36,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # 定义用户HOME环境变量
-HOME='/cygdrive/d/Platform/home/BuXing'
+HOME='/cygdrive/d/UserData/LinuxHome/xuan'
 
 # Interactive operation...
 # alias rm='rm -i'
@@ -71,14 +71,14 @@ alias l='ls -CF'                              #
 # umask 077
 ```
 
-### 2. 设置用户配置文件 `Cygwin\home\${UserName}\.bashrc`：
+### 2. 设置用户配置文件 `${HOME}\.bashrc`：
 
 ```bash
 # 自动补全不区分大小写
 shopt -s nocaseglob
 ```
 
-### 3. 设置用户配置文件 `Cygwin\home\${UserName}\.inputrc`：
+### 3. 设置用户配置文件 `${HOME}\.inputrc`：
 
 ```bash
 # 自动补全不区分大小写
