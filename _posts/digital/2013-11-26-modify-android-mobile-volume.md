@@ -13,8 +13,7 @@ share: true
 本文参考[《Galaxy Nexus如何把音量键修改为功能键》](http://samsung.anqu.com/xinshou_263/12733)和[《修改音量键为HOME和BACK，只需改动两个参量》](http://benyouhui.it168.com/thread-2224793-1-1.html)的两篇文章，经过整理编辑后完成。
 
 
-步骤
-----
+## 步骤
 
 #### 1. 手机要root；
 
@@ -35,8 +34,7 @@ share: true
 
 #### 6. 如果要恢复原来的功能，修改回原来的文本就可以了。
 
-一般实体键的设置
-----------------
+## 一般实体键的设置
 
     HOME         主页
     MENU         菜单
@@ -46,8 +44,7 @@ share: true
     VOLUME_DOWN  音量减少
     VOLUME_UP    音量增加
 
-说明
-----
+## 说明
 
 可以设置按音量键或其他按键唤醒手机。
 

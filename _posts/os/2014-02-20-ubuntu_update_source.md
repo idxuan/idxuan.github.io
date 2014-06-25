@@ -11,8 +11,7 @@ share: true
 
 本文参考了[Ubuntu 中文 Wiki](http://wiki.ubuntu.org.cn/Qref/Source)。
 
-更新步骤
---------
+## 更新步骤
 
 ### 1. 首先备份源列表：
 
@@ -40,8 +39,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-使用 "apt-fast" 更新提速
-----------------------
+## 使用 "apt-fast" 更新提速
 
 ### 1. 安装 "apt-fast"：
 
@@ -69,8 +67,7 @@ sudo apt-fast install ***
 sudo apt-fast upgrade
 ```
 
-Ubuntu13.10源列表
-----------------
+## Ubuntu13.10源列表
 
 ##### 注意： `deb` 是软件源，`deb-src` 是软件源代码源。源码源已经删除，如需要请自行复制软件源并修改前缀 `deb` 为 'deb-src'。
 

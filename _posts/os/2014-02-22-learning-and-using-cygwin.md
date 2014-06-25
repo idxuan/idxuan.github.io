@@ -9,21 +9,18 @@ comments: true
 share: true
 ---
 
-安装Cygwin
-----------
+## 安装Cygwin
 
 略……
 
-安装包
-------
+## 安装包
 
 * 安装“vim”
 * 安装“util-tool”
 * 安装“libiconv”
 * 安装“git”
 
-环境设置
---------
+## 环境设置
 
 ### 1. 设置全局配置文件 `Cygwin\etc\profile`：
 
@@ -114,8 +111,7 @@ f:/Repositories/git /lrepo
 set HOME=d:/UserData/LinuxHome/xuan
 ```
 
-右键菜单打开Cygwin在当前目录
----------------------------
+## 右键菜单打开Cygwin在当前目录
 
 ### 1. 增加注册表项：
 
@@ -152,8 +148,7 @@ fi
 cd "$_T"
 ```
 
-Git设置
---------
+## Git设置
 
 ### 初始化配置：
 
@@ -194,8 +189,7 @@ ssh -T git@github.com
 
 如果看到“You've successfully authenticated, but GitHub does not provide shell access”信息，就表示连接成功。
 
-小技巧
-------
+## 小技巧
 
 #### 可以建立指向Windows系统的符号链接，例如：
 

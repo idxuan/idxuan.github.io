@@ -9,19 +9,21 @@ comments: true
 share: true
 ---
 
-### 设置库：
+## 设置库：
+
 使用“mlink”建立链接目录，避开系统盘。
 
 ```bat
 mlink /j link_dir original_dir
 ```
 
-### 特殊文件处理：
+## 特殊文件处理：
+
 通过文件的“隐藏属性”和“自定义属性”中“恢复默认图标”来处理系统链接文件。
 
-### 安装自定义字体：
+## 安装自定义字体：
 
-### 修改 Windows 7 控制台（CMD）的字体：
+## 修改 Windows 7 控制台（CMD）的字体：
 
 ##### 1. 检查注册表，系统里存在的“TrueType”字体：
 
@@ -41,7 +43,7 @@ mlink /j link_dir original_dir
 
 ##### 5. 重新启动完成控制台的字体的修改；
 
-### 通过增加注册表项，使右键菜单打开控制台（CMD）在当前目录：
+## 通过增加注册表项，使右键菜单打开控制台（CMD）在当前目录：
 
 ```registry
 Windows Registry Editor Version 5.00
