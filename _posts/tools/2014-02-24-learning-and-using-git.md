@@ -9,8 +9,7 @@ comments: true
 share: true
 ---
 
-MSysGit 设置
-------------
+## MSysGit 设置
 
 ### 初始化配置：
 
@@ -116,8 +115,7 @@ fi
 cd "$_T"
 ```
 
-Git 常用操作
-------------
+## Git 常用操作
 
 ### 初始化服务仓库
 
@@ -245,8 +243,7 @@ git push -u github master
 git checkout --orphan gh-pages
 ```
 
-GitHub创建步骤
---------------
+## GitHub创建步骤
 
 ### Create a new repository on the command line
 
@@ -266,8 +263,7 @@ git remote add origin https://github.com/idxuan/vimim_dict.git
 git push -u origin master
 ```
 
-Git 忽略文件
-------------
+## Git 忽略文件
 
 Git忽略文件有3种设置方式：
 
@@ -301,8 +297,7 @@ foo/
 !foo.txt
 ```
 
-Git 使用点滴
-------------
+## Git 使用点滴
 
 #### 系统警告：`“LF will be replaced by CRLF”`
 

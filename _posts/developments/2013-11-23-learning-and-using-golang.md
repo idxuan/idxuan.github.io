@@ -9,8 +9,7 @@ comments: true
 share: true
 ---
 
-Golang 使用点滴
-------------------------
+## Golang 使用点滴
 
 ### mymysql调用提示错误
 
