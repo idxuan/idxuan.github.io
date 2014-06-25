@@ -100,10 +100,12 @@ ln -s /cygdrive/c /c
 ln -s /cygdrive/d /d
 ln -s /cygdrive/e /e
 ln -s /cygdrive/f /f
-ln -s /cygdrive/d/Platform/home /home
-ln -s /cygdrive/d/Platform/Resources /res
-ln -s /cygdrive/e/Downloads /dl
-ln -s /cygdrive/f/Repositories/git /git_repo
+d:/UserData/LinuxHome /home
+d:/UserData/Tech/Repositories/git /repo
+d:/UserData/Work/Projects /projects
+d:/UserData/Work/Codes /codes
+e:/Downloads /dl
+f:/Repositories/git /lrepo
 ```
 
 ### 5. 修改 `Cygwin.bat` 文件，增加设置环境变量 `HOME`：
@@ -123,7 +125,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\opencygwin]
 @="打开用 Cygwin"
 [HKEY_CLASSES_ROOT\Directory\shell\opencygwin\command]
-@="d:\\Platform\\Cygwin\\Cygwin.bat %V"
+@="d:\\GSoft\\Linux\\Cygwin\\Cygwin.bat %V"
 ```
 
 ### 2. 修改 `Cygwin.bat` 文件，增加设置路径变量 `set _T=%*`：
@@ -139,7 +141,7 @@ bash --login -i
 REM mintty.exe -i /Cygwin-Terminal.ico -
 ```
 
-### 3. 设置用户配置文件 `Cygwin\home\${UserName}\.bash_profile`，在最后增加：
+### 3. 设置用户配置文件 `${HOME}\.bash_profile`，在最后增加：
 
 ```bash
 # 右键菜单打开Cygwin在当前目录

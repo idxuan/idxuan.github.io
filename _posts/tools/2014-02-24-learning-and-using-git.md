@@ -54,11 +54,12 @@ ssh -T git@github.com
 ### 修改或新建 `/etc/fstab`，增加以下内容：
 
 ```
-d:/Platform/home /home
-d:/Platform/Resources /res
-d:/Space /spaces
+d:/UserData/LinuxHome /home
+d:/UserData/Tech/Repositories/git /repo
+d:/UserData/Work/Projects /projects
+d:/UserData/Work/Codes /codes
 e:/Downloads /dl
-f:/Repositories/git /git_repo
+f:/Repositories/git /lrepo
 ```
 
 ### 设置全局配置文件 `/etc/profile`：
@@ -93,7 +94,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\shell\opengit]
 @="打开用 Git Bash"
 [HKEY_CLASSES_ROOT\Directory\shell\opengit\command]
-@="d:\\Platform\\MinGW\\git\\git-bash.bat %V"
+@="d:\\GSoft\\Linux32\\MinGW\\git\\git-bash.bat %V"
 ```
 
 #### 2. 修改Cygwin.bat文件，增加设置路径变量 `set _T=%*`：

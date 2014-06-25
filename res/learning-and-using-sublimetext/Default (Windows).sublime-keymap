@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------
 // @Author  : Jun Xuan (idxuan@hotmail.com)
 // @Link    : http://idxuan.github.io
-// @Date    : 2014-05-30
+// @Date    : 2014-06-25
 // @Version : 0.0.3
 // @Desc    : 我的Sublime Text快捷键
 //----------------------------------------------------------------------
@@ -67,6 +67,9 @@
     { "keys": ["ctrl+="], "command": "reindent" },
     // 清除当前行
     { "keys": ["ctrl+shift+alt+d"], "command": "run_macro_file", "args": {"file": "Packages/User/Clean Line.sublime-macro"} },
+    // 在导航历史前进/后退（Data/Packages/User/navigationHistory.py）
+    { "keys": ["ctrl+alt+left"], "command": "navigation_history_back"},
+    { "keys": ["ctrl+alt+right"], "command": "navigation_history_forward"},
 
     //------------------------------------------------------------------
     // 转换文件到UTF-8，需要“ConvertToUTF8”插件
