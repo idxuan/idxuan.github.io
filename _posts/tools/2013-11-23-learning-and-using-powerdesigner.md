@@ -9,8 +9,7 @@ comments: true
 share: true
 ---
 
-PowerDesigner 使用点滴
-----------------------
+## PowerDesigner 使用点滴
 
 #### PowerDesigner 脚本创建Oracle视图时提示错误：“with read only”
 

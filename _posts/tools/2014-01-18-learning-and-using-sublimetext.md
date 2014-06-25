@@ -9,7 +9,6 @@ comments: true
 share: true
 ---
 
-
 一直是 Vim 的用户，对于文本编辑来说确实无可挑剔。可是因为团队开发不可避免的也会使用别的一些IDE工具，相信会有很多 Vim 的爱好者会和我有同样的烦恼，在IDE里很顺手的按下快捷键，输出字符了，按ESC，再按命令，又输出字符了，再再按ESC……无语啊！
 
 因为 Vim 的命令编辑模式的特殊性，大多数的IDE都无法配置自定义的 Vim 快捷键，最多是些标准的“hjkl”等。而且在日常工作中经常会和别人交流，用 Vim 确实太小众了，想想看，敏捷开发结对时，你用 Vim，旁边坐着的哥们是纯 Windowser……
@@ -27,8 +26,7 @@ share: true
 ![Sublime Text3字体图片](/res/learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
 
 
-1. Sublime Text 快捷键
------------------------
+## 1. Sublime Text 快捷键
 
 ### 1.1. 文件窗口面板
 
@@ -244,8 +242,7 @@ share: true
 * `Num` 表示阿拉伯数字;
 * `!` 前缀表示自定义快捷键或不符合日常习惯建议修改。
 
-2. Sublime Text 插件安装方式
-----------------------------
+## 2. Sublime Text 插件安装方式
 
 ### 2.1.直接安装
 
@@ -261,8 +258,7 @@ share: true
 
 按下Ctrl+Shift+P调出命令面板，输入“Package Control:Add Repository”，输入一个插件的Github地址，然后再次按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的Repository里面的插件了。
 
-3. Sublime Text 使用点滴
-------------------------
+## 3. Sublime Text 使用点滴
 
 ### Sublime Text 快捷键设置
 
@@ -327,8 +323,7 @@ IF EXIST %~n1.class (
 
 注：第一行的“runJava.bat”即上面的脚本文件，最后一行"encoding": "gbk"的意义是将输出编码定义为本地中文代码页。如果你编译运行其他程序是发生“[Decode error - output not utf-8]”错误，都可以用此方法解决问题。
 
-4. 本文相关下载资源
--------------------
+## 4. 本文相关下载资源
 
 * [下载我的快捷键设置](/res/learning-and-using-sublimetext/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
 * [下载我的参数配置](/res/learning-and-using-sublimetext/Preferences.sublime-settings "我的参数配置")。
