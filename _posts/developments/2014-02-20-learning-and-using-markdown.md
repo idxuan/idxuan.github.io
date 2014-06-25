@@ -173,11 +173,11 @@ Markdown 支援两种形式的链接语法： 行内 和 参考 两种形式，�
 
 #### Markdown 语法:
 
-    ![汽车左前侧图片](/res/2014-02-20-learning-and-using-markdown/sx4-front-left.jpg "汽车左前侧图片")。
+    ![汽车左前侧图片](/images/sx4-front-left.jpg "汽车左前侧图片")。
 
 #### Markdown 样例:
 
-![汽车左前侧图片](/res/2014-02-20-learning-and-using-markdown/sx4-front-left.jpg "汽车左前侧图片")。
+![汽车左前侧图片](/res/learning-and-using-markdown/sx4-front-left.jpg "汽车左前侧图片")。
 
 ## 代码
 
