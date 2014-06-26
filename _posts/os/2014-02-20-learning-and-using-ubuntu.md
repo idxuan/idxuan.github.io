@@ -4,7 +4,7 @@ category: 操作系统
 title: Ubuntu 学习及使用
 tags : [Ubuntu,操作系统]
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 comments: true
 share: true
 ---

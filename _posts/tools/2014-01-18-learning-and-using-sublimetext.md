@@ -4,7 +4,7 @@ category: 工具
 title: Sublime Text 学习及使用
 tags : [Sublime,文本编辑]
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 comments: true
 share: true
 ---

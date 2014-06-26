@@ -4,7 +4,7 @@ category: 电子数码
 title: 安卓手机修改音量键为 HOME 和 BACK 键
 tags : [Android]
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 comments: true
 share: true
 ---

@@ -4,7 +4,7 @@ category: 研发
 title: Golang 学习及使用
 tags : [Golang,研发]
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 comments: true
 share: true
 ---

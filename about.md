@@ -3,7 +3,7 @@ layout: page
 permalink: /about/
 title: 关于
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 ---
 
 ##### 我的博客记录了学习和生活的经历过程，既为了再次查询时的备忘，也想留下了一路走过的痕迹。

@@ -4,7 +4,7 @@ category: 工具
 title: Git 学习及使用
 tags : [Git,研发,源码管理]
 image:
-  feature: feature.jpg
+    feature: feature.jpg
 comments: true
 share: true
 ---
