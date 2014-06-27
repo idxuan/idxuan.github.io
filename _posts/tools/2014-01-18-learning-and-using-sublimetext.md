@@ -15,7 +15,7 @@ share: true
 
 因为 Vim 的命令编辑模式的特殊性，大多数的IDE都无法配置自定义的 Vim 快捷键，最多是些标准的“hjkl”等。而且在日常工作中经常会和别人交流，用 Vim 确实太小众了，想想看，敏捷开发结对时，你用 Vim，旁边坐着的哥们是纯 Windowser……
 
-最让人无法接受的就是 Vim 的中文输入，想了很多办法，总是无法完美解决，毕竟 Vim 是字母文字为主要使用环境的，郁闷啊！
+最让人无法接受的就是 Vim 的中文输入，想了很多办法，试了多个插件，总是无法完美解决，毕竟 Vim 是以字母文字为主要使用环境的，郁闷啊！
 
 终于下定决心，再学习一种文本编辑器，网上逛了一圈，选了 Sulime Text。写下这篇文章，记录了学习的过程，后期会尽力不断更新修正……
 
@@ -24,7 +24,6 @@ share: true
 配置文件中字体是我在网上找到的“雅黑+Consolas”编程字体，自己修改了一些不喜欢的地方，见下图。你可以变更配置文件为自己喜欢的或直接注释即可。
 
 ![Sublime Text3字体图片](/res/learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
-
 
 ## 2. Sublime Text 快捷键
 
@@ -192,10 +191,13 @@ share: true
 
 ### 2.15. 插件"BracketHighlighter"常用快捷键
 
-* **Ctrl+Alt+Super+[Up, Down]**: 移动到左/右括号
-* **Ctrl+Alt+Super+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
-* **Ctrl+Alt+Super+S**: 选择括号内容
-* **Ctrl+Alt+Super+T**: 从HTML/XML标签选择标签名称
+建议更改默认快捷键 `Ctrl+Alt+Super+*` 为 `Ctrl+Alt+Shift+*`
+
+* **!Ctrl+Alt+Super+V**: 开关区块模式显示
+* **!Ctrl+Alt+Super+[Up, Down]**: 移动到前/后区块符号
+* **!Ctrl+Alt+Super+S**: 选择区块内容（不包括区块符号）
+* **!Ctrl+Alt+Super+D**: 选择区块内容（包括区块符号）
+* **!Ctrl+Alt+Super+R**: 删除区块内容符号
 
 ### 2.16. 插件"TrailingSpaces"常用快捷键
 
@@ -229,7 +231,6 @@ share: true
 * **!Ctrl+;, Ctrl+Shift+R**: 新建 Ruby 模板文件
 * **!Ctrl+;, Ctrl+Shift+M**: 新建 Markdown 模板文件
 
-
 ### 2.22. 插件"InsertNums"常用快捷键
 
 * **Ctrl+Alt+N**: 插入序号
@@ -242,17 +243,17 @@ share: true
 
 ## 3. Sublime Text 插件安装方式
 
-### 3.1.直接安装
+### 3.1. 直接安装
 
 安装Sublime text 2插件很方便，可以直接下载安装包解压缩到Packages目录（Data\Packages）。或在程序里直接打开，菜单选择“Preferences”-> “Browse Packages...”。
 
 如果安装了Git工具，如“MSysGit”等，也可以直接在Packages目录下运行“git clone...”完成安装。
 
-### 3.2.使用Package Control安装
+### 3.2. 使用Package Control安装
 
 安装“Package Control组件”，然后按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，然后在列表中选中要安装的插件。
 
-### 3.3.使用Github的repository安装
+### 3.3. 使用Github的repository安装
 
 按下Ctrl+Shift+P调出命令面板，输入“Package Control:Add Repository”，输入一个插件的Github地址，然后再次按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的Repository里面的插件了。
 
