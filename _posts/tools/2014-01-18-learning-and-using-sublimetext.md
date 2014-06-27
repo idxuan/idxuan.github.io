@@ -57,9 +57,9 @@ share: true
 
 ### 1.2. 移动定位
 
-* **Ctrl+P,#或Ctrl+;**: 定位关键词
-* **Ctrl+P,:或Ctrl+G**: 定位行
-* **Ctrl+P,@或Ctrl+R**: 定位函数
+* **Ctrl+P,# 或 Ctrl+;**: 定位关键词
+* **Ctrl+P,: 或 Ctrl+G**: 定位行
+* **Ctrl+P,@ 或 Ctrl+R**: 定位函数
 * **Ctrl+Shift+R**: 定位函数从项目
 * **[Home,End]**: 行首/行尾
 * **Ctrl+[Home,End]**: 页首/页尾
@@ -90,9 +90,9 @@ share: true
 * **Ctrl+Y**: 重做或重复
 * **Ctrl+U**: 软撤销（可撤销光标移动）
 * **Ctrl+Shift+U**: 软重做（可重做光标移动）
-* **Ctrl+C或Ctrl+Insert**: 复制
-* **Ctrl+X或Shift+Delete**: 剪切
-* **Ctrl+V或Shift+Insert**: 粘贴
+* **Ctrl+C 或 Ctrl+Insert**: 复制
+* **Ctrl+X 或 Shift+Delete**: 剪切
+* **Ctrl+V 或 Shift+Insert**: 粘贴
 * **Ctrl+Shift+V**: 粘贴并格式化
 * **Ctrl+K,Ctrl+V**: 粘贴从历史记录
 * **Tab**: 光标后缩进
@@ -157,7 +157,7 @@ share: true
 * **Ctrl+K,Ctrl+T**: 折叠属性
 * **Ctrl+K,Ctrl+Num**: 折叠Num层级
 * **Ctrl+K,Ctrl+0**: 展开所有
-* **Ctrl+B或F7**: 构建
+* **Ctrl+B 或 F7**: 构建
 * **Ctrl+Shift+B**: 运行
 * **Ctrl+Break**: 执行
 
@@ -238,7 +238,7 @@ share: true
 
 * `[A,B,C]` 表示A,B,C可选其一；
 * `Num` 表示阿拉伯数字;
-* `!` 前缀表示在原快捷键前增加 `Ctrl+;` 形成组合快捷键，或修改为其他建议快捷键。
+* `!` 前缀表示在原快捷键前增加 `Ctrl+;` 形成组合快捷键，或修改为建议快捷键。
 
 ## 2. Sublime Text 插件安装方式
 
