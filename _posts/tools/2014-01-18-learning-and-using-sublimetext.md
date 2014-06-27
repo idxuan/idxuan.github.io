@@ -86,7 +86,7 @@ share: true
 ### 1.4. 编辑
 
 * **Ctrl+Z**: 恢复
-* **!Ctrl+Shift+Z**: 重做（建议：Ctrl+Alt+Z）
+* **Ctrl+Shift+Z**: 重做
 * **Ctrl+Y**: 重做或重复
 * **Ctrl+U**: 软撤销（可撤销光标移动）
 * **Ctrl+Shift+U**: 软重做（可重做光标移动）
@@ -119,7 +119,7 @@ share: true
 * **Ctrl+F**: 查找
 * **Ctrl+H**: 查找替换
 * **Ctrl+Shift+F**: 查找或替换，可选文件夹或过滤器
-* **!Ctrl+I**: 累加查找（建议：Alt+I）
+* **!Ctrl+I**: 新查找（建议：Alt+I）
 * **F3**: 查找下一个
 * **Shift+F3**: 查找上一个
 
@@ -141,15 +141,15 @@ share: true
 
 ### 1.8. 标记
 
-* **!Ctrl+K, Ctrl+Space**: 设置标记（建议：Alt+;,Alt+Space）
-* **!Ctrl+K, Ctrl+A**: 从光标位置选择至标记（建议：Alt+;,Alt+A）
-* **!Ctrl+K, Ctrl+W**: 从光标位置删除至标记（建议：Alt+;,Alt+W）
-* **!Ctrl+K, Ctrl+X**: 光标位置交换标记（建议：Alt+;,Alt+X）
-* **!Ctrl+K, Ctrl+G**: 清除标记（建议：Alt+;,Alt+G）
+* **Ctrl+K, Ctrl+Space**: 设置标记
+* **Ctrl+K, Ctrl+A**: 从光标位置选择至标记
+* **Ctrl+K, Ctrl+W**: 从光标位置删除至标记
+* **Ctrl+K, Ctrl+X**: 光标位置交换标记
+* **Ctrl+K, Ctrl+G**: 清除标记
 
 ### 1.9. 代码
 
-* **!Ctrl+Space**: 自动完成，重复选择下一提示（建议：Alt+Space）
+* **Ctrl+Space**: 自动完成，重复选择下一提示
 * **Ctrl+/**: 行注释
 * **Ctrl+Shift+/**: 块注释
 * **Ctrl+Shift+[**: 折叠当前
@@ -169,7 +169,7 @@ share: true
 ### 1.11. 宏
 
 * **Ctrl+Q**: 开关宏记录
-* **!Ctrl+Shift+Q**: 运行宏（建议：Ctrl+Alt+Q）
+* **Ctrl+Shift+Q**: 运行宏
 
 ### 1.12. 拼写检查
 
@@ -184,26 +184,23 @@ share: true
 * **!Ctrl+Alt+[J,K]**: 屏幕按行上/下滚动
 * **!Ctrl+Alt+[H,L]**: 左右移动至上/下一个词
 * **!Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
+* **!Ctrl+Alt+[B,F]**: 导航历史前进/后退
 * **!Ctrl+=**: 格式化选择行
-* **!Ctrl+Alt+Shift+D**: 清除当前行
-* **!Ctrl+Alt+[Left,Right]**: 导航历史前进/后退
-* **!Alt+;,Alt+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
+* **!Ctrl+;, Ctrl+C**: 格式化选区为 GitHub Flavored Markdown Code
+* **!Ctrl+;, Ctrl+L**: 清除当前行
+* **!Ctrl+;, Ctrl+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
 ### 1.14. 插件"BracketHighlighter"常用快捷键
 
-原快捷键前缀ctrl+alt+super修改为ctrl+alt+shift
-
-* **!Ctrl+Alt+Shift+[Up, Down]**: 移动到左/右括号
-* **!Ctrl+Alt+Shift+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
-* **!Ctrl+Alt+Shift+S**: 选择括号内容
-* **!Ctrl+Alt+Shift+T**: 从HTML/XML标签选择标签名称
+* **Ctrl+Alt+Super+[Up, Down]**: 移动到左/右括号
+* **Ctrl+Alt+Super+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
+* **Ctrl+Alt+Super+S**: 选择括号内容
+* **Ctrl+Alt+Super+T**: 从HTML/XML标签选择标签名称
 
 ### 1.15. 插件"TrailingSpaces"常用快捷键
 
-原快捷键前缀ctrl+shift修改为ctrl+alt
-
-* **!Ctrl+Alt+T**: 开关显示多余空格
-* **!Ctrl+Alt+D**: 删除多余空格
+* **!Ctrl+Shift+T**: 开关显示多余空格
+* **!Ctrl+Shift+D**: 删除多余空格
 
 ### 1.16. 插件"DeleteBlankLines"常用快捷键
 
@@ -212,8 +209,8 @@ share: true
 
 ### 1.17. 插件"ConvertToUTF8"常用快捷键
 
-* **Ctrl+Shift+C**: 转换文件到GBK
-* **!Ctrl+Shift+G**: 转换文件到UTF-8
+* **!Ctrl+;, Ctrl+Alt+G**: 转换文件到 GBK
+* **!Ctrl+;, Ctrl+Alt+U**: 转换文件到 UTF-8
 
 ### 1.18. 插件"Alignment"常用快捷键
 
@@ -225,11 +222,12 @@ share: true
 
 ### 1.20. 插件"SublimeTmpl"常用快捷键
 
-* **!Ctrl+Alt+Shift+J**: 新建Java模板文件
-* **!Ctrl+Alt+Shift+G**: 新建Go模板文件
-* **!Ctrl+Alt+Shift+Y**: 新建Python模板文件
-* **!Ctrl+Alt+Shift+R**: 新建Ruby模板文件
-* **!Ctrl+Alt+Shift+M**: 新建Markdown模板文件
+* **!Ctrl+;, Ctrl+Shift+B**: 新建 Blog 模板文件
+* **!Ctrl+;, Ctrl+Shift+J**: 新建 Java 模板文件
+* **!Ctrl+;, Ctrl+Shift+G**: 新建 Go 模板文件
+* **!Ctrl+;, Ctrl+Shift+Y**: 新建 Python 模板文件
+* **!Ctrl+;, Ctrl+Shift+R**: 新建 Ruby 模板文件
+* **!Ctrl+;, Ctrl+Shift+M**: 新建 Markdown 模板文件
 
 
 ### 1.21. 插件"InsertNums"常用快捷键
@@ -240,7 +238,7 @@ share: true
 
 * `[A,B,C]` 表示A,B,C可选其一；
 * `Num` 表示阿拉伯数字;
-* `!` 前缀表示自定义快捷键或不符合日常习惯建议修改。
+* `!` 前缀表示在原快捷键前增加 `Ctrl+;` 形成组合快捷键，或修改为其他建议快捷键。
 
 ## 2. Sublime Text 插件安装方式
 

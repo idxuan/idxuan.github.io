@@ -21,14 +21,20 @@ share: true
 
 #### 3. 在记事本的最下方找到一下三行文字：
 
-    key 114 VOLUME_DOWM WAKE
-    key 115 VOLUME_UP   WAKE  　　　
-    key 116 POWER       WAKE
+```
+key 114 VOLUME_DOWM WAKE
+key 115 VOLUME_UP   WAKE  　　　
+key 116 POWER       WAKE
+```
 
 #### 4. 下面就可以按照自己的意思来修改了：
 
-    音量减少键 改为 HOME键：“key 114 VOLUME_DOWM WAKE” 改为 “key 114 HOME WAKE”；
-    音量增加键 改为 BACK键：“key 115 VOLUME_UP WAKE”   改为 “key 115 BACK WAKE”；
+
+```
+音量减少键 改为 HOME键：“key 114 VOLUME_DOWM WAKE” 改为 “key 114 HOME WAKE”；
+音量增加键 改为 BACK键：“key 115 VOLUME_UP WAKE”   改为 “key 115 BACK WAKE”；
+```
+
 
 #### 5. 保存文件，重启即可修改完成。
 
@@ -36,13 +42,15 @@ share: true
 
 ## 一般实体键的设置
 
-    HOME         主页
-    MENU         菜单
-    BACK         返回
-    SEARCH       搜索
-    POWER        电源
-    VOLUME_DOWN  音量减少
-    VOLUME_UP    音量增加
+```
+HOME         主页
+MENU         菜单
+BACK         返回
+SEARCH       搜索
+POWER        电源
+VOLUME_DOWN  音量减少
+VOLUME_UP    音量增加
+```
 
 ## 说明
 
