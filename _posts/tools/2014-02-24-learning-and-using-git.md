@@ -31,20 +31,20 @@ git config --global core.autocrlf false
 git config --global core.filemode false
 ```
 
-### 2.2. 配置 SSH 证书（下面二选一）：
+### 2.2. 配置 SSH 证书：
 
-#### 1. 新建 SSH 证书：
+#### 2.2.1. 新建 SSH 证书：
 
 ```bash
 ssh-keygen -t rsa -C "your_name@email_address"
 ```
 
-#### 2. 恢复备份 SSH 证书：
+#### 2.2.2. 恢复备份 SSH 证书：
 
 1. 建立目录“~/.ssh“；
 2. 复制备份的“id_rsa”(私钥) 和“id_rsa.pub”(公钥) 文件至目录“~/.ssh“；
 
-#### 通过 github 测试 SSH 证书：
+#### 2.2.3. 通过 github 测试 SSH 证书：
 
 ```bash
 ssh -T git@github.com
@@ -121,13 +121,13 @@ cd "$_T"
 
 ### 3.1. 初始化服务仓库
 
-#### 1. 初始化服务仓库，包括工作区，通常为本地仓库
+#### 3.1.1. 初始化服务仓库，包括工作区，通常为本地仓库
 
 ```bash
 git init
 ```
 
-#### 2. 初始化服务仓库，不包括工作区，通常为远程仓库
+#### 3.1.2. 初始化服务仓库，不包括工作区，通常为远程仓库
 
 ```bash
 git init  --bare
@@ -136,13 +136,13 @@ git init  --bare --shared
 
 ### 3.2. 增加文件快照到当前工作区
 
-#### 1. 增加所有文件快照到当前工作区
+#### 3.2.1. 增加所有文件快照到当前工作区
 
 ```bash
 git add .
 ```
 
-#### 2. 增加所有文件快照到当前工作区并更新索引为当前文件状态，通常因本地文件未使用Git更新删除。
+#### 3.2.2. 增加所有文件快照到当前工作区并更新索引为当前文件状态，通常因本地文件未使用Git更新删除。
 
 ```bash
 git add -A .
@@ -162,13 +162,13 @@ git mv app/oldName.rb app/newName.rb
 
 ### 3.5. 提交文件快照到本地仓库
 
-#### 1. 提交到本地仓库，已进行了文件快照
+#### 3.5.1. 提交到本地仓库，已进行了文件快照
 
 ```bash
 git commit -m "commit information"
 ```
 
-#### 2. 提交到本地仓库，未进行了文件快照（仓库已经存在文件）
+#### 3.5.2. 提交到本地仓库，未进行了文件快照（仓库已经存在文件）
 
 ```bash
 git commit -a -m 'commit information'

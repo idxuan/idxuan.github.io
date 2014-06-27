@@ -28,7 +28,7 @@ share: true
 
 ## 2. Sublime Text 快捷键
 
-### 2.2. 文件窗口面板
+### 2.1. 文件窗口面板
 
 * **Ctrl+Shift+P**: 打开命令面板
 * **Ctrl+Alt+P**: 打开项目切换面板
@@ -55,7 +55,7 @@ share: true
 * **Ctrl+K,Ctrl+[Left,Right]**: 焦点移动到上/下个窗口
 * **Ctrl+K,Ctrl+Shift+[Left,Right]**: 当前文件移动到上/下个窗口
 
-### 2.3. 移动定位
+### 2.2. 移动定位
 
 * **Ctrl+P,# 或 Ctrl+;**: 定位关键词
 * **Ctrl+P,: 或 Ctrl+G**: 定位行
@@ -70,7 +70,7 @@ share: true
 * **Alt+Shift+-**: 跳转至下一个光标位置
 * **Ctrl+[Up,Down]**: 屏幕按行上/下滚动
 
-### 2.4. 选择
+### 2.3. 选择
 
 * **Shift+[Home,End]**: 选择到行首行尾
 * **Ctrl+Shift+[Home,End]**: 选择到页首页尾
@@ -83,7 +83,7 @@ share: true
 * **Alt+Shift+[Left,Right]**: 选择并跳转至上/下一个子词（区分大小写）
 * **Ctrl+L**: 选择行（重复按下将下一行加入选择）
 
-### 2.5. 编辑
+### 2.4. 编辑
 
 * **Ctrl+Z**: 恢复
 * **Ctrl+Shift+Z**: 重做
@@ -197,30 +197,30 @@ share: true
 * **Ctrl+Alt+Super+S**: 选择括号内容
 * **Ctrl+Alt+Super+T**: 从HTML/XML标签选择标签名称
 
-### 2.15. 插件"TrailingSpaces"常用快捷键
+### 2.16. 插件"TrailingSpaces"常用快捷键
 
 * **!Ctrl+Shift+T**: 开关显示多余空格
 * **!Ctrl+Shift+D**: 删除多余空格
 
-### 2.16. 插件"DeleteBlankLines"常用快捷键
+### 2.17. 插件"DeleteBlankLines"常用快捷键
 
 * **Ctrl+Alt+Backspace**: 删除选择区域所有空行
 * **Ctrl+Alt+Shift+Backspace**: 删除选择区域多余空行
 
-### 2.17. 插件"ConvertToUTF8"常用快捷键
+### 2.18. 插件"ConvertToUTF8"常用快捷键
 
 * **!Ctrl+;, Ctrl+Alt+G**: 转换文件到 GBK
 * **!Ctrl+;, Ctrl+Alt+U**: 转换文件到 UTF-8
 
-### 2.18. 插件"Alignment"常用快捷键
+### 2.19. 插件"Alignment"常用快捷键
 
 * **Ctrl+Alt+A**: 以定义的符号（默认等号）为准格式化
 
-### 2.19. 插件"Tag"常用快捷键
+### 2.20. 插件"Tag"常用快捷键
 
 * **Ctrl+Alt+F**:  格式化
 
-### 2.20. 插件"SublimeTmpl"常用快捷键
+### 2.21. 插件"SublimeTmpl"常用快捷键
 
 * **!Ctrl+;, Ctrl+Shift+B**: 新建 Blog 模板文件
 * **!Ctrl+;, Ctrl+Shift+J**: 新建 Java 模板文件
@@ -242,37 +242,37 @@ share: true
 
 ## 3. Sublime Text 插件安装方式
 
-### 3.2.直接安装
+### 3.1.直接安装
 
 安装Sublime text 2插件很方便，可以直接下载安装包解压缩到Packages目录（Data\Packages）。或在程序里直接打开，菜单选择“Preferences”-> “Browse Packages...”。
 
 如果安装了Git工具，如“MSysGit”等，也可以直接在Packages目录下运行“git clone...”完成安装。
 
-### 3.3.使用Package Control安装
+### 3.2.使用Package Control安装
 
 安装“Package Control组件”，然后按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，然后在列表中选中要安装的插件。
 
-### 3.4.使用Github的repository安装
+### 3.3.使用Github的repository安装
 
 按下Ctrl+Shift+P调出命令面板，输入“Package Control:Add Repository”，输入一个插件的Github地址，然后再次按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的Repository里面的插件了。
 
 ## 4. Sublime Text 使用点滴
 
-### 4.2. Sublime Text 快捷键设置
+### 4.1. Sublime Text 快捷键设置
 
 菜单选择“Preferences”->“Key Bindings-User” ，粘贴并修改为你自己习惯的即可。
 
-### 4.3. Sublime Text 参数配置
+### 4.2. Sublime Text 参数配置
 
 菜单选择“Preferences”->“Settings-User”，粘贴并修改为你自己习惯的即可。
 
-### 4.4. 空格和Tab转换
+### 4.3. 空格和Tab转换
 
 按下Ctrl+Shift+P调出命令面板，输入“Convert Indentation to Tabs”将空格转换为Tab。
 
 如果安装了“LineEndings”插件，可以将当前文件或所有打开文件进行空格和Tab互转。通过按下Ctrl+Shift+P调出命令面板，或选择右下方状态栏菜单操作。
 
-### 4.5. 修改系统或插件默认的设置或快捷键
+### 4.4. 修改系统或插件默认的设置或快捷键
 
 有时候我们想修改系统或插件默认的设置或快捷键，但从“Sublime Text”程序里打开默认是不允许修改的，怎么办呢？
 
@@ -284,9 +284,9 @@ share: true
 
 ## 5. 编译运行
 
-### 5.2. Java
+### 5.1. Java
 
-#### 5.2.1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
+#### 5.1.1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
 
 ```bat
 @ECHO OFF
@@ -305,7 +305,7 @@ IF EXIST %~n2.class (
 
 注：“javac -encoding utf-8 %~nx1”的意义是指定源文件是“UTF-8”格式，如果你的源文件是其他格式，请修改或删除“-encoding utf-8”。
 
-#### 5.2.2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
+#### 5.1.2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
 
 ```
 {

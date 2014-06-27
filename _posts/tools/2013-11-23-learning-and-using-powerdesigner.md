@@ -11,9 +11,9 @@ share: true
 
 ## 1. 概述
 
-## PowerDesigner 使用点滴
+## 2. PowerDesigner 使用点滴
 
-### PowerDesigner 脚本创建Oracle视图时提示错误：“with read only”
+### 2.1 PowerDesigner 脚本创建Oracle视图时提示错误：“with read only”
 
 用Power Designer生成脚本，在PLSql Developer里用Command窗口创建视图，总是报错，用SQL窗口运行则一切正常。
 

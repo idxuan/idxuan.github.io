@@ -170,20 +170,20 @@ git config --global core.autocrlf false
 git config --global core.filemode false
 ```
 
-### 6.2. 配置 SSH 证书（下面二选一）：
+### 6.2. 配置 SSH 证书：
 
-##### 1. 新建 SSH 证书：
+##### 6.2.1. 新建 SSH 证书：
 
 ```bash
 ssh-keygen -t rsa -C "your_name@email_address"
 ```
 
-##### 2. 恢复备份 SSH 证书：
+##### 6.2.2. 恢复备份 SSH 证书：
 
 1. 建立目录“~/.ssh“；
 2. 复制备份的“id_rsa”(私钥) 和“id_rsa.pub”(公钥) 文件至目录“~/.ssh“；
 
-### 6.3. 通过 github 测试 SSH 证书：
+### 6.2.3. 通过 github 测试 SSH 证书：
 
 
 ssh -T git@github.com
