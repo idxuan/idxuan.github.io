@@ -182,7 +182,7 @@ share: true
 * **!Alt+[H,J,K,L]**: 上下左右移动
 * **!Alt+Shift+[H,J,K,L]**: 上下左右移动并选择
 * **!Ctrl+Alt+[J,K]**: 屏幕按行上/下滚动
-* **!Ctrl+Alt+[H,L]**: 左右移动至上/下一个词
+* **!Ctrl+Alt+[H,L]**: 移动至上/下一个词
 * **!Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
 * **!Ctrl+Alt+[B,F]**: 导航历史前进/后退
 * **!Ctrl+=**: 格式化选择行
@@ -258,21 +258,21 @@ share: true
 
 ## 3. Sublime Text 使用点滴
 
-### Sublime Text 快捷键设置
+### 3.1. Sublime Text 快捷键设置
 
 菜单选择“Preferences”->“Key Bindings-User” ，粘贴并修改为你自己习惯的即可。
 
-###Sublime Text 参数配置
+### 3.2. Sublime Text 参数配置
 
 菜单选择“Preferences”->“Settings-User”，粘贴并修改为你自己习惯的即可。
 
-### 空格和Tab转换
+### 3.3. 空格和Tab转换
 
 按下Ctrl+Shift+P调出命令面板，输入“Convert Indentation to Tabs”将空格转换为Tab。
 
 如果安装了“LineEndings”插件，可以将当前文件或所有打开文件进行空格和Tab互转。通过按下Ctrl+Shift+P调出命令面板，或选择右下方状态栏菜单操作。
 
-### 修改系统或插件默认的设置或快捷键
+### 3.4. 修改系统或插件默认的设置或快捷键
 
 有时候我们想修改系统或插件默认的设置或快捷键，但从“Sublime Text”程序里打开默认是不允许修改的，怎么办呢？
 
@@ -282,12 +282,9 @@ share: true
     系统配置文件在“Packages”目录下“Default.sublime-package”文件解压缩，修改后重新压缩既可。
     插件配置文件在“Data/Packages/”用户包目录下或在Data/Installed Packages/”安装包文件。同上，直接修改或解压缩，修改后重新压缩既可。
 
-### Bug
+## 4. 编译运行
 
-1. 使用“SublimeTmpl”新建文件模板插件如果把所有文件都关闭，焦点不在主窗口的话，“SublimeTmpl”菜单变灰，无法使用。
-2. 不知道是“Sublime Text3”还是“ConvertToUTF8 ”的问题，如果在Windows系统里更改了“DPI“显示比例的话，标签页和侧边栏中文字体会变成方框乱码，感觉好像放不下一样。
-
-### Java编译运行
+### 4.1. Java
 
 #### 1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
 
@@ -321,7 +318,12 @@ IF EXIST %~n1.class (
 
 注：第一行的“runJava.bat”即上面的脚本文件，最后一行"encoding": "gbk"的意义是将输出编码定义为本地中文代码页。如果你编译运行其他程序是发生“[Decode error - output not utf-8]”错误，都可以用此方法解决问题。
 
-## 4. 本文相关下载资源
+## Bug
+
+1. 使用“SublimeTmpl”新建文件模板插件如果把所有文件都关闭，焦点不在主窗口的话，“SublimeTmpl”菜单变灰，无法使用。
+2. 不知道是“Sublime Text3”还是“ConvertToUTF8 ”的问题，如果在Windows系统里更改了“DPI“显示比例的话，标签页和侧边栏中文字体会变成方框乱码，感觉好像放不下一样。
+
+## 本文相关下载资源
 
 * [下载我的快捷键设置](/res/learning-and-using-sublimetext/Default\ (Windows\).sublime-keymap "我的快捷键设置")。
 * [下载我的参数配置](/res/learning-and-using-sublimetext/Preferences.sublime-settings "我的参数配置")。
