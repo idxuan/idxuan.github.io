@@ -9,9 +9,11 @@ comments: true
 share: true
 ---
 
-## MSysGit 设置
+## 1. 概述
 
-### 初始化配置：
+## 2. MSysGit 设置
+
+### 2.1. 初始化配置：
 
 ```bash
 #配置ID
@@ -29,7 +31,7 @@ git config --global core.autocrlf false
 git config --global core.filemode false
 ```
 
-### 配置 SSH 证书（下面二选一）：
+### 2.2. 配置 SSH 证书（下面二选一）：
 
 #### 1. 新建 SSH 证书：
 
@@ -50,7 +52,7 @@ ssh -T git@github.com
 
 如果看到“You've successfully authenticated, but GitHub does not provide shell access”信息，就表示连接成功。
 
-### 修改或新建 `/etc/fstab`，增加以下内容：
+### 2.3. 修改或新建 `/etc/fstab`，增加以下内容：
 
 ```
 d:/UserData/LinuxHome /home
@@ -61,7 +63,7 @@ e:/Downloads /dl
 f:/Repositories/git /lrepo
 ```
 
-### 设置全局配置文件 `/etc/profile`：
+### 2.4. 设置全局配置文件 `/etc/profile`：
 
 ```cfg
 # 定义语言环境变量
@@ -83,9 +85,9 @@ alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 ```
 
-### 右键菜单打开Cygwin在当前目录
+### 2.5. 右键菜单打开Cygwin在当前目录
 
-#### 1. 增加注册表项：
+#### 2.5.1. 增加注册表项：
 
 ```registry
 Windows Registry Editor Version 5.00
@@ -96,7 +98,7 @@ Windows Registry Editor Version 5.00
 @="d:\\GSoft\\Linux32\\MinGW\\git\\git-bash.bat %V"
 ```
 
-#### 2. 修改Cygwin.bat文件，增加设置路径变量 `set _T=%*`：
+#### 2.5.2. 修改Cygwin.bat文件，增加设置路径变量 `set _T=%*`：
 
 ```bat
 @echo off
@@ -104,7 +106,7 @@ set _T=%*
 ……
 ```
 
-#### 3. 设置用户配置文件 `\home\${UserName}\.bash_profile`，在最后增加：
+#### 2.5.3. 设置用户配置文件 `\home\${UserName}\.bash_profile`，在最后增加：
 
 ```bash
 # 右键菜单打开Git在当前目录
@@ -115,9 +117,9 @@ fi
 cd "$_T"
 ```
 
-## Git 常用操作
+## 3. Git 常用操作
 
-### 初始化服务仓库
+### 3.1. 初始化服务仓库
 
 #### 1. 初始化服务仓库，包括工作区，通常为本地仓库
 
@@ -132,7 +134,7 @@ git init  --bare
 git init  --bare --shared
 ```
 
-### 增加文件快照到当前工作区
+### 3.2. 增加文件快照到当前工作区
 
 #### 1. 增加所有文件快照到当前工作区
 
@@ -146,19 +148,19 @@ git add .
 git add -A .
 ```
 
-### 删除文件从当前工作区和索引
+### 3.3. 删除文件从当前工作区和索引
 
 ```bash
 git rm app/user.rb
 ```
 
-### 重命名文件从当前工作区和索引
+### 3.4. 重命名文件从当前工作区和索引
 
 ```bash
 git mv app/oldName.rb app/newName.rb
 ```
 
-### 提交文件快照到本地仓库
+### 3.5. 提交文件快照到本地仓库
 
 #### 1. 提交到本地仓库，已进行了文件快照
 
@@ -172,25 +174,25 @@ git commit -m "commit information"
 git commit -a -m 'commit information'
 ```
 
-### 查询当前工作区状态
+### 3.6. 查询当前工作区状态
 
 ```bash
 git status
 ```
 
-### 查询提交历史
+### 3.7. 查询提交历史
 
 ```bash
 git log
 ```
 
-### 获取远程仓库克隆
+### 3.8. 获取远程仓库克隆
 
 ```bash
 git clone ssh://git@github.com/idxuan/GitTest
 ```
 
-### 增加远程仓库配置
+### 3.9. 增加远程仓库配置
 
 ```bash
 git remote add github git@github.com:idxuan/GitTest.git (推荐)
@@ -198,38 +200,38 @@ git remote add github https://github.com/idxuan/GitTest.git
 git remote add local file://f:/Repositories/git/conv_dict
 ```
 
-### 删除远程仓库配置
+### 3.10. 删除远程仓库配置
 
 ```bash
 git remote rm github
 ```
 
-### 远程仓库重命名
+### 3.11. 远程仓库重命名
 
 ```bash
 git remote rename oldname newname
 ```
 
-### 修改远程仓库路径
+### 3.12. 修改远程仓库路径
 
 ```bash
 git remote set-url github git@github.com:idxuan/GitTest.git
 ```
 
-### 查询远程仓库配置
+### 3.13. 查询远程仓库配置
 
 ```bash
 git remote -v
 ```
 
-### 获取远程仓库
+### 3.14. 获取远程仓库
 
 ```bash
 git pull 远端仓库名 远端分支名:本地分支名
 git pull github master
 ```
 
-### 提交到远程仓库
+### 3.15. 提交到远程仓库
 
 ```bash
 git push 远端仓库名 本地分支名:远端分支名
@@ -237,15 +239,15 @@ git push github master
 git push -u github master
 ```
 
-### 创建一个没有父节点的分支（github规定，只有该分支中的页面，才会生成网页文件）
+### 3.16. 创建一个没有父节点的分支（github规定，只有该分支中的页面，才会生成网页文件）
 
 ```bash
 git checkout --orphan gh-pages
 ```
 
-## GitHub创建步骤
+## 4. GitHub创建步骤
 
-### Create a new repository on the command line
+### 4.1 Create a new repository on the command line
 
 ```bash
 touch README.md
@@ -256,31 +258,31 @@ git remote add origin https://github.com/idxuan/vimim_dict.git
 git push -u origin master
 ```
 
-### Push an existing repository from the command line
+### 4.2 Push an existing repository from the command line
 
 ```bash
 git remote add origin https://github.com/idxuan/vimim_dict.git
 git push -u origin master
 ```
 
-## Git 忽略文件
+## 5. Git 忽略文件
 
 Git忽略文件有3种设置方式：
 
-### 方式一
+### 5.1. 方式一
 
 在仓库目录下新建一个名为.gitignore的文件（因为是点开头，可能没办法直接在windows目录下直接创建，必须通过右键Git Bash，按照linux的方式来新建.gitignore文件）。
 .gitignore文件对其所在的目录及所在目录的全部子目录均有效。通过将.gitignore文件添加到仓库，其他开发者更新该文件到本地仓库，以共享同一套忽略规则。
 
-### 方式二
+### 5.2. 方式二
 
 通过配置.git/info/exclude文件来忽略文件。这种方式对仓库全局有效，只能对自己本地仓库有作用，其他人没办法通过这种方式来共享忽略规则，除非他人也修改其本地仓库的该文件。
 
-### 方式三
+### 5.3. 方式三
 
 通过.git/config配置文件的core. Excludesfile选项，指定一个忽略规则文件（完整路径）。忽略规则在文件中（当然该文件名可以任意取），该方式的作用域是也全局的。
 
-### 忽略样例
+### 5.4. 忽略样例
 
 ```cfg
 #忽略掉所有文件名是 foo.txt的文件
@@ -297,9 +299,9 @@ foo/
 !foo.txt
 ```
 
-## Git 使用点滴
+## 6. Git 使用点滴
 
-#### 系统警告：`“LF will be replaced by CRLF”`
+### 系统警告：`“LF will be replaced by CRLF”`
 
 ##### 原因分析：
 
@@ -332,7 +334,7 @@ git init
 git add .
 ```
 
-#### 系统错误：`“failed to push some refs to”`
+### 系统错误：`“failed to push some refs to”`
 
 ##### 原因分析：
 

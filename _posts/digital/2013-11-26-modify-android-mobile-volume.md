@@ -9,17 +9,18 @@ comments: true
 share: true
 ---
 
+## 1. 概述
 
-本文参考[《Galaxy Nexus如何把音量键修改为功能键》](http://samsung.anqu.com/xinshou_263/12733)和[《修改音量键为HOME和BACK，只需改动两个参量》](http://benyouhui.it168.com/thread-2224793-1-1.html)的两篇文章，经过整理编辑后完成。
+本文参考[《Galaxy Nexus如何把音量键修改为功能键》](http://samsung.anqu.com/xinshou_263/12733)和[《修改音量键为HOME和BACK，只需改动两个参量》](http://benyouhui.it168.com/thread-2224793-1-2.html)的两篇文章，经过整理编辑后完成。
 
 
-## 步骤
+## 2. 步骤
 
-#### 1. 手机要root；
+### 2.2. 手机要root；
 
-#### 2. 打开RE管理器用记事本打开键盘定义文件，常见的文件名为“system/usr/keylayout/***gpio-keypad.kl”；
+### 2.2. 打开RE管理器用记事本打开键盘定义文件，常见的文件名为“system/usr/keylayout/***gpio-keypad.kl”；
 
-#### 3. 在记事本的最下方找到一下三行文字：
+### 2.3. 在记事本的最下方找到一下三行文字：
 
 ```
 key 114 VOLUME_DOWM WAKE
@@ -27,7 +28,7 @@ key 115 VOLUME_UP   WAKE  　　　
 key 116 POWER       WAKE
 ```
 
-#### 4. 下面就可以按照自己的意思来修改了：
+### 2.4. 下面就可以按照自己的意思来修改了：
 
 
 ```
@@ -36,11 +37,11 @@ key 116 POWER       WAKE
 ```
 
 
-#### 5. 保存文件，重启即可修改完成。
+### 2.5. 保存文件，重启即可修改完成。
 
-#### 6. 如果要恢复原来的功能，修改回原来的文本就可以了。
+### 2.6. 如果要恢复原来的功能，修改回原来的文本就可以了。
 
-## 一般实体键的设置
+## 3. 一般实体键的设置
 
 ```
 HOME         主页
@@ -52,7 +53,7 @@ VOLUME_DOWN  音量减少
 VOLUME_UP    音量增加
 ```
 
-## 说明
+## 4. 说明
 
 可以设置按音量键或其他按键唤醒手机。
 

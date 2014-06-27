@@ -9,39 +9,41 @@ comments: true
 share: true
 ---
 
+## 1. 概述
+
 本文参考了[Ubuntu 中文 Wiki](http://wiki.ubuntu.org.cn/Qref/Source)。
 
-## 更新步骤
+## 2. 更新步骤
 
-### 1. 首先备份源列表：
+### 2.1. 首先备份源列表：
 
 ```bash
 sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup
 ```
 
-### 2. 而后用gedit或其他编辑器打开：
+### 2.2. 而后用gedit或其他编辑器打开：
 
 ```bash
 gksu gedit /etc/apt/sources.lis
 ```
 
-### 3. 从下面“Ubuntu13.10源列表”中选择合适的源，替换掉文件中所有的内容，保存编辑好的文件，注意一定要选对版本：
+### 2.3. 从下面“Ubuntu13.10源列表”中选择合适的源，替换掉文件中所有的内容，保存编辑好的文件，注意一定要选对版本：
 
-### 4. 刷新列表，注意：一定要执行刷新：
+### 2.4. 刷新列表，注意：一定要执行刷新：
 
 ```bash
 sudo apt-get update
 ```
 
-### 5. 更新系统（可选）：
+### 2.5. 更新系统（可选）：
 
 ```bash
 sudo apt-get upgrade
 ```
 
-## 使用 "apt-fast" 更新提速
+## 3. 使用 "apt-fast" 更新提速
 
-### 1. 安装 "apt-fast"：
+### 3.1. 安装 "apt-fast"：
 
 ```bash
 sudo apt-get install axel aria2
@@ -50,7 +52,7 @@ sudo apt-get update
 sudo apt-get install apt-fast
 ```
 
-### 2. 对 "apt-fast" 进行设置（新版本安装完成后会显示设置窗口）：
+### 3.2. 对 "apt-fast" 进行设置（新版本安装完成后会显示设置窗口）：
 
 ```bash
 sudo gedit /etc/axelrc
@@ -59,7 +61,7 @@ sudo gedit /etc/axelrc
 num_connections = Num
 ```
 
-### 3. 用 "apt-fast" 代替 "apt-get" 使用：
+### 3.3. 用 "apt-fast" 代替 "apt-get" 使用：
 
 ```bash
 sudo apt-fast update
@@ -67,7 +69,7 @@ sudo apt-fast install ***
 sudo apt-fast upgrade
 ```
 
-## Ubuntu13.10源列表
+## 4. Ubuntu13.10源列表
 
 ##### 注意： `deb` 是软件源，`deb-src` 是软件源代码源。源码源已经删除，如需要请自行复制软件源并修改前缀 `deb` 为 'deb-src'。
 

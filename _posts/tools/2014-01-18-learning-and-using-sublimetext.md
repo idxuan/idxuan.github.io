@@ -9,7 +9,7 @@ comments: true
 share: true
 ---
 
-## 概述
+## 1. 概述
 
 一直是 Vim 的用户，对于文本编辑来说确实无可挑剔。可是因为团队开发不可避免的也会使用别的一些IDE工具，相信会有很多 Vim 的爱好者会和我有同样的烦恼，在IDE里很顺手的按下快捷键，输出字符了，按ESC，再按命令，又输出字符了，再再按ESC……无语啊！
 
@@ -26,9 +26,9 @@ share: true
 ![Sublime Text3字体图片](/res/learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
 
 
-## 1. Sublime Text 快捷键
+## 2. Sublime Text 快捷键
 
-### 1.1. 文件窗口面板
+### 2.2. 文件窗口面板
 
 * **Ctrl+Shift+P**: 打开命令面板
 * **Ctrl+Alt+P**: 打开项目切换面板
@@ -55,7 +55,7 @@ share: true
 * **Ctrl+K,Ctrl+[Left,Right]**: 焦点移动到上/下个窗口
 * **Ctrl+K,Ctrl+Shift+[Left,Right]**: 当前文件移动到上/下个窗口
 
-### 1.2. 移动定位
+### 2.3. 移动定位
 
 * **Ctrl+P,# 或 Ctrl+;**: 定位关键词
 * **Ctrl+P,: 或 Ctrl+G**: 定位行
@@ -70,7 +70,7 @@ share: true
 * **Alt+Shift+-**: 跳转至下一个光标位置
 * **Ctrl+[Up,Down]**: 屏幕按行上/下滚动
 
-### 1.3. 选择
+### 2.4. 选择
 
 * **Shift+[Home,End]**: 选择到行首行尾
 * **Ctrl+Shift+[Home,End]**: 选择到页首页尾
@@ -83,7 +83,7 @@ share: true
 * **Alt+Shift+[Left,Right]**: 选择并跳转至上/下一个子词（区分大小写）
 * **Ctrl+L**: 选择行（重复按下将下一行加入选择）
 
-### 1.4. 编辑
+### 2.5. 编辑
 
 * **Ctrl+Z**: 恢复
 * **Ctrl+Shift+Z**: 重做
@@ -114,7 +114,7 @@ share: true
 * **Ctrl+K,Ctrl+U**: 词改为大写
 * **Ctrl+K,Ctrl+L**: 词改为小写
 
-### 1.5. 查找/替换
+### 2.5. 查找/替换
 
 * **Ctrl+F**: 查找
 * **Ctrl+H**: 查找替换
@@ -123,7 +123,7 @@ share: true
 * **F3**: 查找下一个
 * **Shift+F3**: 查找上一个
 
-### 1.6. 列模式
+### 2.6. 列模式
 
 * **鼠标中键或Shift+鼠标右键**: 列模式
 * **Ctrl+鼠标列模式**: 增加列选择
@@ -131,7 +131,7 @@ share: true
 * **Ctrl+Alt+[Up,Down]**: 选择上/下多行列模式，光标在当前列
 * **Ctrl+Shift+L**: 选区进入列模式，光标在行尾
 
-### 1.7. 书签
+### 2.7. 书签
 
 * **Ctrl+F2**: 添加/删除书签
 * **F2**: 下一个书签
@@ -139,7 +139,7 @@ share: true
 * **Alt+F2**: 选择所有书签
 * **Ctrl+Shift+F2**: 删除所有书签
 
-### 1.8. 标记
+### 2.8. 标记
 
 * **Ctrl+K, Ctrl+Space**: 设置标记
 * **Ctrl+K, Ctrl+A**: 从光标位置选择至标记
@@ -147,7 +147,7 @@ share: true
 * **Ctrl+K, Ctrl+X**: 光标位置交换标记
 * **Ctrl+K, Ctrl+G**: 清除标记
 
-### 1.9. 代码
+### 2.9. 代码
 
 * **Ctrl+Space**: 自动完成，重复选择下一提示
 * **Ctrl+/**: 行注释
@@ -161,23 +161,23 @@ share: true
 * **Ctrl+Shift+B**: 运行
 * **Ctrl+Break**: 执行
 
-### 1.10. XML/HTML
+### 2.10. XML/HTML
 
 * **Ctrl+Shift+A**: 选择标签内的内容
 * **Ctrl+Shift+.**: 闭合当前标签
 
-### 1.11. 宏
+### 2.12. 宏
 
 * **Ctrl+Q**: 开关宏记录
 * **Ctrl+Shift+Q**: 运行宏
 
-### 1.12. 拼写检查
+### 2.13. 拼写检查
 
 * **F6**: 开启/关闭拼写检查
 * **Ctrl+F6**: 定位下一个拼错
 * **Ctrl+Shift+F6**: 定位上一个拼错
 
-### 1.13. 自定义快捷键
+### 2.14. 自定义快捷键
 
 * **!Alt+[H,J,K,L]**: 上下左右移动
 * **!Alt+Shift+[H,J,K,L]**: 上下左右移动并选择
@@ -190,37 +190,37 @@ share: true
 * **!Ctrl+;, Ctrl+L**: 清除当前行
 * **!Ctrl+;, Ctrl+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
-### 1.14. 插件"BracketHighlighter"常用快捷键
+### 2.15. 插件"BracketHighlighter"常用快捷键
 
 * **Ctrl+Alt+Super+[Up, Down]**: 移动到左/右括号
 * **Ctrl+Alt+Super+[Left,Right]**: 如果光标紧贴属性或在属性字符串内，直接选择此属性，否则选择光标左/右侧属性
 * **Ctrl+Alt+Super+S**: 选择括号内容
 * **Ctrl+Alt+Super+T**: 从HTML/XML标签选择标签名称
 
-### 1.15. 插件"TrailingSpaces"常用快捷键
+### 2.15. 插件"TrailingSpaces"常用快捷键
 
 * **!Ctrl+Shift+T**: 开关显示多余空格
 * **!Ctrl+Shift+D**: 删除多余空格
 
-### 1.16. 插件"DeleteBlankLines"常用快捷键
+### 2.16. 插件"DeleteBlankLines"常用快捷键
 
 * **Ctrl+Alt+Backspace**: 删除选择区域所有空行
 * **Ctrl+Alt+Shift+Backspace**: 删除选择区域多余空行
 
-### 1.17. 插件"ConvertToUTF8"常用快捷键
+### 2.17. 插件"ConvertToUTF8"常用快捷键
 
 * **!Ctrl+;, Ctrl+Alt+G**: 转换文件到 GBK
 * **!Ctrl+;, Ctrl+Alt+U**: 转换文件到 UTF-8
 
-### 1.18. 插件"Alignment"常用快捷键
+### 2.18. 插件"Alignment"常用快捷键
 
 * **Ctrl+Alt+A**: 以定义的符号（默认等号）为准格式化
 
-### 1.19. 插件"Tag"常用快捷键
+### 2.19. 插件"Tag"常用快捷键
 
 * **Ctrl+Alt+F**:  格式化
 
-### 1.20. 插件"SublimeTmpl"常用快捷键
+### 2.20. 插件"SublimeTmpl"常用快捷键
 
 * **!Ctrl+;, Ctrl+Shift+B**: 新建 Blog 模板文件
 * **!Ctrl+;, Ctrl+Shift+J**: 新建 Java 模板文件
@@ -230,7 +230,7 @@ share: true
 * **!Ctrl+;, Ctrl+Shift+M**: 新建 Markdown 模板文件
 
 
-### 1.21. 插件"InsertNums"常用快捷键
+### 2.22. 插件"InsertNums"常用快捷键
 
 * **Ctrl+Alt+N**: 插入序号
 
@@ -240,64 +240,64 @@ share: true
 * `Num` 表示阿拉伯数字;
 * `!` 前缀表示在原快捷键前增加 `Ctrl+;` 形成组合快捷键，或修改为建议快捷键。
 
-## 2. Sublime Text 插件安装方式
+## 3. Sublime Text 插件安装方式
 
-### 2.1.直接安装
+### 3.2.直接安装
 
 安装Sublime text 2插件很方便，可以直接下载安装包解压缩到Packages目录（Data\Packages）。或在程序里直接打开，菜单选择“Preferences”-> “Browse Packages...”。
 
 如果安装了Git工具，如“MSysGit”等，也可以直接在Packages目录下运行“git clone...”完成安装。
 
-### 2.2.使用Package Control安装
+### 3.3.使用Package Control安装
 
 安装“Package Control组件”，然后按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，然后在列表中选中要安装的插件。
 
-### 2.3.使用Github的repository安装
+### 3.4.使用Github的repository安装
 
 按下Ctrl+Shift+P调出命令面板，输入“Package Control:Add Repository”，输入一个插件的Github地址，然后再次按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的Repository里面的插件了。
 
-## 3. Sublime Text 使用点滴
+## 4. Sublime Text 使用点滴
 
-### 3.1. Sublime Text 快捷键设置
+### 4.2. Sublime Text 快捷键设置
 
 菜单选择“Preferences”->“Key Bindings-User” ，粘贴并修改为你自己习惯的即可。
 
-### 3.2. Sublime Text 参数配置
+### 4.3. Sublime Text 参数配置
 
 菜单选择“Preferences”->“Settings-User”，粘贴并修改为你自己习惯的即可。
 
-### 3.3. 空格和Tab转换
+### 4.4. 空格和Tab转换
 
 按下Ctrl+Shift+P调出命令面板，输入“Convert Indentation to Tabs”将空格转换为Tab。
 
 如果安装了“LineEndings”插件，可以将当前文件或所有打开文件进行空格和Tab互转。通过按下Ctrl+Shift+P调出命令面板，或选择右下方状态栏菜单操作。
 
-### 3.4. 修改系统或插件默认的设置或快捷键
+### 4.5. 修改系统或插件默认的设置或快捷键
 
 有时候我们想修改系统或插件默认的设置或快捷键，但从“Sublime Text”程序里打开默认是不允许修改的，怎么办呢？
 
-1. 在“Data/Packages/”用户目录下新建或编辑配置文件；
-2. 直接修改原配置文件，解压缩编辑后重新压缩即可。
+2. 在“Data/Packages/”用户目录下新建或编辑配置文件；
+3. 直接修改原配置文件，解压缩编辑后重新压缩即可。
 
     系统配置文件在“Packages”目录下“Default.sublime-package”文件解压缩，修改后重新压缩既可。
     插件配置文件在“Data/Packages/”用户包目录下或在Data/Installed Packages/”安装包文件。同上，直接修改或解压缩，修改后重新压缩既可。
 
-## 4. 编译运行
+## 5. 编译运行
 
-### 4.1. Java
+### 5.2. Java
 
-#### 1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
+#### 5.2.1. 增加编译运行批处理文件“runJava.bat”并放入可执行路径，脚本内容如下：
 
 ```bat
 @ECHO OFF
 
 cd %~dp1
-ECHO Compiling %~nx1.......
-IF EXIST %~n1.class (
-    DEL %~n1.class
+ECHO Compiling %~nx2.......
+IF EXIST %~n2.class (
+    DEL %~n2.class
 )
 javac -encoding utf-8 %~nx1
-IF EXIST %~n1.class (
+IF EXIST %~n2.class (
     ECHO -----------OUTPUT-----------
     java %~n1
 )
@@ -305,7 +305,7 @@ IF EXIST %~n1.class (
 
 注：“javac -encoding utf-8 %~nx1”的意义是指定源文件是“UTF-8”格式，如果你的源文件是其他格式，请修改或删除“-encoding utf-8”。
 
-#### 2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
+#### 5.2.2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
 
 ```
 {
