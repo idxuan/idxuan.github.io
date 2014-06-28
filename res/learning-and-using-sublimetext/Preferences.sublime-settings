@@ -71,9 +71,32 @@
             "selector": "text.html"
         }
     ],
+    //------------------------------------------------------------------
+    // Vintage 包括基本的命令:
+    // d (delete), y (copy), c (change),
+    // gu (lower case), gU (upper case), g~ (swap case),
+    // g? (rot13), < (unindent), and > (indent).
+    // Vintage 包括基本的动作:
+    // l, h, j, k, W, w, e, E, b, B,
+    // alt+w (move by sub-words), alt+W (move backwards by sub-words),
+    // $, ^, %, 0, G, gg, f, F, t, T, ^f, ^b, H, M, and L.
+    // 支持文本对象，包括单词、引号、括号和标签。
+    // 支持 ('.') 重复命令, 支持指定数量的命令和动作。支持寄存器、宏和书签。
+    // 支持其他杂项命令和 *, /, n, N, s, S 等……
+    //------------------------------------------------------------------
+    // 开关 Vintage 的 Ctrl 键，与 Sublime 有冲突
+    // Ctrl+[: Escape
+    // Ctrl+R: Redo
+    // Ctrl+Y: Scroll down one line
+    // Ctrl+E: Scroll up one line
+    // Ctrl+F: Page Down
+    // Ctrl+B: Page Up
+    "vintage_ctrl_keys": false,
+    // 开关 Vintage 默认启动命令模式
+    "vintage_start_in_command_mode": true,
     // 要忽略的插件，需要重启
     "ignored_packages":
     [
-        "Vintage"
+        // "Vintage"
     ]
 }

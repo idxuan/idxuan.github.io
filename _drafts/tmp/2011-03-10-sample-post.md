@@ -5,9 +5,9 @@ description: "Just about everything you'll need to style in the theme: headings,
 modified: 2013-05-31
 tags: [sample post]
 image:
-  feature: abstract-3.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+    feature: abstract-3.jpg
+    credit: dargadgetz
+    creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true
 ---
@@ -46,9 +46,9 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 ### Ordered Lists
 
 1. Item one
-   1. sub item one
-   2. sub item two
-   3. sub item three
+    1. sub item one
+    2. sub item two
+    3. sub item three
 2. Item two
 
 ### Unordered Lists
@@ -76,9 +76,9 @@ Syntax highlighting via Pygments
 
 {% highlight css %}
 #container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
 }
 {% endhighlight %}
 
