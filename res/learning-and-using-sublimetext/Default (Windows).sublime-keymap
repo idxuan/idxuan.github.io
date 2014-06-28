@@ -50,7 +50,7 @@
     // 格式化选择行
     { "keys": ["ctrl+="], "command": "reindent" },
     // 格式化选区为 GitHub Flavored Markdown Code
-    { "keys": ["ctrl+;", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/GFM-Code-Xuan.sublime-macro"} },
+    { "keys": ["ctrl+;", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/Format-GFM-Code-Xuan.sublime-macro"} },
     // 清除当前行
     { "keys": ["ctrl+;", "ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Clean-Line-Xuan.sublime-macro"} },
 
@@ -65,5 +65,82 @@
     //------------------------------------------------------------------
     { "keys": ["ctrl+;", "ctrl+shift+t"], "command": "toggle_trailing_spaces" },
     // 删除多余空格（需要“TrailingSpacer”插件）
-    { "keys": ["ctrl+;", "ctrl+shift+d"], "command": "delete_trailing_spaces" }
+    { "keys": ["ctrl+;", "ctrl+shift+d"], "command": "delete_trailing_spaces" },
+
+    //------------------------------------------------------------------
+    // 区块高亮（需要“BracketHighlighter”插件）
+    //------------------------------------------------------------------
+    // Go to left bracket
+    {
+        "keys": ["ctrl+shift+alt+up"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "left"}
+            }
+        }
+    },
+    // Go to right bracket
+    {
+        "keys": ["ctrl+shift+alt+down"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "right"}
+            }
+        }
+    },
+    // Remove brackets
+    {
+        "keys": ["ctrl+shift+alt+r"],
+        "command": "bh_remove_brackets"
+    },
+    // Select text between brackets
+    {
+        "no_outside_adj": true,
+        "keys": ["ctrl+shift+alt+s"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
+            }
+        }
+    },
+    // Select text including brackets
+    {
+        "keys": ["ctrl+shift+alt+d"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"always_include_brackets": true}
+            }
+        }
+    },
+    // Toggle high visibility mode
+    {
+        "keys": ["ctrl+shift+alt+v"],
+        "command": "bh_toggle_high_visibility"
+    }
 ]

@@ -201,6 +201,8 @@ share: true
 
 ### 2.16. 插件"TrailingSpaces"常用快捷键
 
+建议在默认快捷键前增加 `Ctrl+;` 形成组合快捷键
+
 * **!Ctrl+Shift+T**: 开关显示多余空格
 * **!Ctrl+Shift+D**: 删除多余空格
 
