@@ -301,9 +301,9 @@ foo/
 
 ## 6. Git 使用点滴
 
-### 系统警告：`“LF will be replaced by CRLF”`
+### 6.1 系统警告：`“LF will be replaced by CRLF”`
 
-##### 原因分析：
+**原因分析：**
 
 各操作系统在文本文件中使用的换行符并不一致，如下：
 
@@ -313,7 +313,7 @@ foo/
 
 在Windows系统中使用Git来生成一个项目，如果文件中的换行符为 `LF`， 当执行`git add .`时，系统提示：`LF` 将被转换成 `CRLF`。
 
-##### 解决方法：
+**解决方法：**
 
 删除生成的.git文件（删除Git仓库）
 
@@ -334,13 +334,13 @@ git init
 git add .
 ```
 
-### 系统错误：`“failed to push some refs to”`
+### 6.2 系统错误：`“failed to push some refs to”`
 
-##### 原因分析：
+**原因分析：**
 
 远程仓库中代码版本与本地不一致冲突导致。
 
-##### 解决方法：
+**解决方法：**
 
 1. git pull github master
 2. 自动merge或手动merge冲突
