@@ -40,7 +40,7 @@
     // 左右移动至上/下一个词并选择
     { "keys": ["ctrl+shift+alt+h"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
     { "keys": ["ctrl+shift+alt+l"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
-    // 在导航历史前进/后退（Data/Packages/User/navigationHistory.py）
+    // 在导航历史前进/后退（Data/Packages/User/Xuan-NavigationHistory.py）
     { "keys": ["ctrl+alt+b"], "command": "navigation_history_back"},
     { "keys": ["ctrl+alt+f"], "command": "navigation_history_forward"},
 
@@ -50,9 +50,9 @@
     // 格式化选择行
     { "keys": ["ctrl+="], "command": "reindent" },
     // 格式化选区为 GitHub Flavored Markdown Code
-    { "keys": ["ctrl+;", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/Format-GFM-Code-Xuan.sublime-macro"} },
+    { "keys": ["ctrl+;", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Format-GFM-Code.sublime-macro"} },
     // 清除当前行
-    { "keys": ["ctrl+;", "ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Clean-Line-Xuan.sublime-macro"} },
+    { "keys": ["ctrl+;", "ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Clean-Line.sublime-macro"} },
 
     //------------------------------------------------------------------
     // 文件编码GBK和UTF-8互相转换，需要“ConvertToUTF8”插件

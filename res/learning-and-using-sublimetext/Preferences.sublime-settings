@@ -11,11 +11,11 @@
     // 颜色主题，需要“theme-soda”插件，并放置“colour-schemes”在User目录下
     //------------------------------------------------------------------
     // "theme": "Soda Light.sublime-theme",
-    // "color_scheme": "Packages/User/Espresso-Soda-Xuan.tmTheme",
+    // "color_scheme": "Packages/User/Xuan-Espresso-Soda.tmTheme",
     // "theme": "Soda Dark.sublime-theme",
     "theme": "Soda SolarizedDark.sublime-theme",
-    // "color_scheme": "Packages/User/Monokai-Soda-Xuan.tmTheme",
-    "color_scheme": "Packages/User/Solarized-Dark-Xuan.tmTheme",
+    // "color_scheme": "Packages/User/Xuan-Monokai-Soda.tmTheme",
+    "color_scheme": "Packages/User/Xuan-Solarized-Dark.tmTheme",
     "soda_classic_tabs": true,
     "soda_folder_icons": true,
     //------------------------------------------------------------------
@@ -27,7 +27,7 @@
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
     // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
     // "directwrite" (Windows only)
-    "font_options": ["directwrite"],
+    // "font_options": ["directwrite"],
     //------------------------------------------------------------------
     // Tab
     //------------------------------------------------------------------
