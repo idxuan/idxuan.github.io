@@ -14,14 +14,14 @@ encoding:    utf-8
 # Jekyll服务主机端口
 # host:        0.0.0.0
 #port: 4000
-# 设置站点的网址，这对环境改变时很有用
-# url: http://localhost:4000
+
 url: http://idxuan.github.io
+highlighter: pygments
+# url: http://localhost:4000
+# highlighter:
 
 # show_drafts: nil
 limit_posts: 0
-highlighter: pygments
-
 relative_permalinks: true
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks

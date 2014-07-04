@@ -186,7 +186,7 @@ share: true
 * **!Ctrl+Alt+[B,F]**: 导航历史前进/后退
 * **!Ctrl+=**: 格式化选择行
 * **!Ctrl+;, Ctrl+C**: 格式化选区为 GitHub Flavored Markdown Code
-* **!Ctrl+;, Ctrl+L**: 清除当前行
+* **!Ctrl+;, Ctrl+K**: 清除当前行
 * **!Ctrl+;, Ctrl+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
 ### 2.15. 插件"BracketHighlighter"常用快捷键
@@ -247,17 +247,17 @@ share: true
 
 ### 3.1. 直接安装
 
-安装Sublime text 2插件很方便，可以直接下载安装包解压缩到Packages目录（Data\Packages）。或在程序里直接打开，菜单选择“Preferences”-> “Browse Packages...”。
+安装 Sublime text 插件很方便，可以直接下载安装包解压缩到 Packages 目录（Data\Packages）。或在程序里直接打开，菜单选择“Preferences”-> “Browse Packages...”。
 
-如果安装了Git工具，如“MSysGit”等，也可以直接在Packages目录下运行“git clone...”完成安装。
+如果安装了 Git 工具，如“MSysGit”等，也可以直接在 Packages 目录下运行 `git clone...` 完成安装。
 
 ### 3.2. 使用Package Control安装
 
-安装“Package Control组件”，然后按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，然后在列表中选中要安装的插件。
+安装“Package Control组件”，然后按下 `Ctrl+Shift+P` 调出命令面板，输入“Package Control:Install Package”，然后在列表中选中要安装的插件。
 
 ### 3.3. 使用Github的repository安装
 
-按下Ctrl+Shift+P调出命令面板，输入“Package Control:Add Repository”，输入一个插件的Github地址，然后再次按下Ctrl+Shift+P调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的Repository里面的插件了。
+按下 `Ctrl+Shift+P` 调出命令面板，输入“Package Control:Add Repository”，输入一个插件的 Github 地址，然后再次按下 `Ctrl+Shift+P` 调出命令面板，输入“Package Control:Install Package”，现在就可以安装刚刚添加的 Repository 里面的插件了。
 
 ## 4. Sublime Text 使用点滴
 
@@ -271,19 +271,19 @@ share: true
 
 ### 4.3. 空格和Tab转换
 
-按下Ctrl+Shift+P调出命令面板，输入“Convert Indentation to Tabs”将空格转换为Tab。
+按下 `Ctrl+Shift+P` 调出命令面板，输入“Convert Indentation to Tabs”将空格转换为 Tab。
 
-如果安装了“LineEndings”插件，可以将当前文件或所有打开文件进行空格和Tab互转。通过按下Ctrl+Shift+P调出命令面板，或选择右下方状态栏菜单操作。
+如果安装了“LineEndings”插件，可以将当前文件或所有打开文件进行空格和Tab互转。通过按下 `Ctrl+Shift+P` 调出命令面板，或选择右下方状态栏菜单操作。
 
 ### 4.4. 修改系统或插件默认的设置或快捷键
 
-有时候我们想修改系统或插件默认的设置或快捷键，但从“Sublime Text”程序里打开默认是不允许修改的，怎么办呢？
+有时候我们想修改系统或插件默认的设置或快捷键，但从 Sublime Text 程序里打开默认是不允许修改的，怎么办呢？
 
 2. 在“Data/Packages/”用户目录下新建或编辑配置文件；
 3. 直接修改原配置文件，解压缩编辑后重新压缩即可。
 
     系统配置文件在“Packages”目录下“Default.sublime-package”文件解压缩，修改后重新压缩既可。
-    插件配置文件在“Data/Packages/”用户包目录下或在Data/Installed Packages/”安装包文件。同上，直接修改或解压缩，修改后重新压缩既可。
+    插件配置文件在“Data/Packages/”用户包目录下或在“Data/Installed Packages/”安装包文件。同上，直接修改或解压缩，修改后重新压缩既可。
 
 ## 5. 编译运行
 
@@ -306,7 +306,7 @@ IF EXIST %~n2.class (
 )
 ```
 
-注：“javac -encoding utf-8 %~nx1”的意义是指定源文件是“UTF-8”格式，如果你的源文件是其他格式，请修改或删除“-encoding utf-8”。
+注： `javac -encoding utf-8 %~nx1` 的意义是指定源文件是 `UTF-8` 格式，如果你的源文件是其他格式，请修改或删除 `-encoding utf-8`。
 
 #### 5.1.2. 将“Packages”目录下“Java.sublime-package”文件解压缩，修改“JavaC.sublime-build”文件后重新压缩，修改内容如下：
 
@@ -319,12 +319,12 @@ IF EXIST %~n2.class (
 }
 ```
 
-注：第一行的“runJava.bat”即上面的脚本文件，最后一行"encoding": "gbk"的意义是将输出编码定义为本地中文代码页。如果你编译运行其他程序是发生“[Decode error - output not utf-8]”错误，都可以用此方法解决问题。
+注：第一行的“runJava.bat”即上面的脚本文件，最后一行 `"encoding": "gbk"` 的意义是将输出编码定义为本地中文代码页。如果你编译运行其他程序是发生 `[Decode error - output not utf-8]` 错误，都可以用此方法解决问题。
 
 ## Bug
 
-1. 使用“SublimeTmpl”新建文件模板插件如果把所有文件都关闭，焦点不在主窗口的话，“SublimeTmpl”菜单变灰，无法使用。
-2. 不知道是“Sublime Text3”还是“ConvertToUTF8 ”的问题，如果在Windows系统里更改了“DPI“显示比例的话，标签页和侧边栏中文字体会变成方框乱码，感觉好像放不下一样。
+1. 使用新建文件模板插件 SublimeTmpl， 如果把所有文件都关闭，焦点不在主窗口的话，SublimeTmpl 插件的菜单变灰，无法使用。
+2. 不知道是 Sublime Text 还是 ConvertToUTF8 插件的问题，如果在 Windows 系统里更改了 `DPI` 显示比例的话，标签页和侧边栏中文字体会变成方框乱码，感觉好像放不下一样。
 
 ## 本文相关下载资源
 
