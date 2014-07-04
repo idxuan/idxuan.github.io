@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 工具
+category: 软件
 title: Sublime Text 学习及使用
 tags : [Sublime,文本编辑]
 image:

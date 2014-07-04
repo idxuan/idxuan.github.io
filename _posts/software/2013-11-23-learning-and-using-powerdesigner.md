@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 工具
+category: 软件
 title: PowerDesigner 学习及使用
 tags : [PowerDesigner,研发,设计]
 image:

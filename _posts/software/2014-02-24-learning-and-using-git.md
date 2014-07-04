@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 工具
+category: 软件
 title: Git 学习及使用
 tags : [Git,研发,源码管理]
 image:
@@ -188,8 +188,32 @@ git log
 
 ### 3.8. 获取远程仓库克隆
 
+#### 3.8.1. 获取远程仓库主库克隆
+
+`git clone` 默认会把远程仓库整个给 `clone` 下来，但只会在本地默认创建一个 `master` 分支。
+
 ```bash
 git clone ssh://git@github.com/idxuan/GitTest
+```
+
+#### 3.8.2. 获取远程仓库分支克隆
+
+查看远程分支信息。
+
+```bash
+git branch –r
+```
+
+查看本地和远程分支信息。
+
+```bash
+git branch –a
+```
+
+获取远程分支到本地，参数 `-t` 设置为本地当前分支。
+
+```bash
+git checkout -t origin/other_branch
 ```
 
 ### 3.9. 增加远程仓库配置
