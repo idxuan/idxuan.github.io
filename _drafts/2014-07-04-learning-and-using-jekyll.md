@@ -47,11 +47,11 @@ gem install pygments.rb --version "=0.5.0"
 
 **原因分析：**
 
-无。
+`Markdown` 解释器 `redcarpet` 和 `maruku` 问题。
 
 **解决方法：**
 
-编辑 `_config.yml` 配置文件，更换 `Markdown` 解释器为 `rdiscount` 。
+编辑 `_config.yml` 配置文件，更换其他 `Markdown` 解释器。
 
 ```cfg
 markdown: rdiscount

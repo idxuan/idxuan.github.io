@@ -34,8 +34,8 @@
 # 忽略Ctags生成的临时文件
 tags
 # 忽略Jekyll生成的站点文件
-_site
-_theme_packages
+/_site/
+/_theme_packages/
 
 Thumbs.db
 .DS_Store
