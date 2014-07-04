@@ -40,9 +40,9 @@ future: true
 #lsi: false
 
 # markdown: maruku
-# markdown: redcarpet
+markdown: redcarpet
 # markdown: rdiscount
-markdown: kramdown
+# markdown: kramdown
 markdown_ext: md
 textile_ext: textile
 
