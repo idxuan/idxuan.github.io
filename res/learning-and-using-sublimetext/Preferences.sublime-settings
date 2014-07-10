@@ -54,10 +54,10 @@
     "rulers": [72],
       // 高亮已修改未保存文件标签
     "highlight_modified_tabs": true,
-    // 下划线匹配区块符号（“BracketHighlighter”插件有类似功能，设置 False）
+    // 特殊显示匹配区块符号（“BracketHighlighter”插件有类似功能，
+    // 设置 False，可以针对语法类型单独设置）
     "match_brackets": false,
-    // Set to false if you'd rather only highlight the brackets when the caret is
-    // next to one
+    // 非光标在区块符号两端才特殊显示
     "match_brackets_content": true,
     // 滚动超过结束行
     "scroll_past_end": false,

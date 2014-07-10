@@ -11,7 +11,6 @@ share: true
 
 ## 1. 概述
 
-
 ## 2. Jekyll 设置
 
 ### 2.1. 初始化配置：
@@ -26,7 +25,7 @@ share: true
 
 **解决方法：**
 
-更换 `Pygments.rb` 到没有问题的版本。
+更换 `Pygments.rb` 到没有问题的版本 `0.5.0`。
 
 ```bash
 gem uninstall pygments.rb --version "=0.6.0"

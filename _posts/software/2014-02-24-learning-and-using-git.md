@@ -196,7 +196,26 @@ git log
 git clone ssh://git@github.com/idxuan/GitTest
 ```
 
-#### 3.8.2. 获取远程仓库分支克隆
+#### 3.8.2. 从远程仓库更新克隆
+
+放弃本地版本，获取远程仓库最新版本
+
+```bash
+git reset --hard
+git pull
+```
+
+注：`git pull` 与 `git fetch` 的区别，`git pull` 相当于 `git fetch && git merge`
+
+在远程仓库已经修改的情况下，本地也已经修改，那么需要通过一些方法避免同步更新错误，例如可以通过指定合并策略来接受远程修改，丢弃本地的所有修改：
+
+```bash
+git pull -X theirs
+```
+
+其中 -X 指定合并策略是 “theirs" ，就是用别人的覆盖自己的。-s 默认就是 recursive，所以省略了。
+
+#### 3.8.3. 获取远程仓库分支克隆
 
 查看远程分支信息。
 
@@ -325,7 +344,7 @@ foo/
 
 ## 6. Git 使用点滴
 
-### 6.1 系统警告：`“LF will be replaced by CRLF”`
+### 6.1 系统警告：`LF will be replaced by CRLF`
 
 **原因分析：**
 
@@ -358,7 +377,7 @@ git init
 git add .
 ```
 
-### 6.2 系统错误：`“failed to push some refs to”`
+### 6.2 系统错误：`failed to push some refs to`
 
 **原因分析：**
 
@@ -370,3 +389,38 @@ git add .
 2. 自动merge或手动merge冲突
 3. git push github master
 
+### 6.2 系统错误：`commit your changes or stash them before you can merge`
+
+**原因分析：**
+
+更新本地代码时远程仓库中代码版本与本地不一致冲突导致。
+
+**解决方法：**
+
+#### 6.2.1 放弃本地版本，获取远程仓库最新版本
+
+```bash
+git reset --hard
+git pull
+```
+
+其中 `git reset` 是针对版本,如果想针对文件回退本地修改,使用
+
+```
+git checkout HEAD file/to/restore
+```
+
+#### 6.2.2 使用 `git stash` 保留生产服务器上所做的改动,仅仅并入新配置项。
+
+```bash
+git stash
+git pull
+git stash pop
+```
+
+然后可以使用 `git diff -w +filename` 来确认代码自动合并的情况，并作出相应修改。
+
+* git stash: 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到 Git 栈中。
+* git stash pop: 从 Git 栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个 Stash 的内容，所以用栈来管理，pop 会从最近的一个 stash 中读取内容并恢复。
+* git stash list: 显示 Git 栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
+* git stash clear: 清空 Git 栈。此时使用 gitg 等图形化工具会发现，原来 stash 的哪些节点都消失了。

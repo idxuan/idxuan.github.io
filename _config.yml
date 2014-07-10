@@ -57,7 +57,7 @@ redcarpet:
     extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough", "autolink"]
 
 rdiscount:
-    extensions: []
+    extensions: ["autolink", "footnotes", "smart", "generate_toc"]
 
 redcloth:
     hard_breaks: true
