@@ -315,11 +315,11 @@ IF EXIST %~n2.class (
 }
 ```
 
-### 4.6. 按语法类型配置 Sublime
+### 4.6. Sublime 按语法类型配置
 
 打开要配置的语法类型文件，选择 `Preferences -> Settings - More -> Syntax Specific - User`，然后添加配置语句就可以了，配置文件保存在用户目录。
 
-## 5. 问题
+## 5. Sublime 错误
 
 ### 5.1. 错误 `Decode error - output not utf-8`
 
