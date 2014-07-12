@@ -427,7 +427,7 @@ git stash pop
 
 ## 7. Git Config 配置项
 
-### 7.1 默认远程
+### 7.1 默认远程仓库
 
 ```bash
 git config branch.master.remote origin
