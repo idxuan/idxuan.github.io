@@ -285,11 +285,7 @@ share: true
     系统配置文件在“Packages”目录下“Default.sublime-package”文件解压缩，修改后重新压缩或复制到用户目录既可。
     插件配置文件在“Data/Packages/”用户包目录下或在“Data/Installed Packages/”安装包文件。同上，直接修改或解压缩，修改后重新压缩或复制到用户目录既可。
 
-## 5. 编译运行
-
-### 5.1. Java
-
-#### 5.1.1. 编译运行 `Java`
+### 4.5. 编译运行 `Java`
 
 增加编译运行批处理文件“runJava.bat”并放入可执行路径， `javac -encoding utf-8 %~nx1` 的意义是指定源文件是 `UTF-8` 格式，如果你的源文件是其他格式，请修改或删除 `-encoding utf-8`。
 
@@ -319,7 +315,13 @@ IF EXIST %~n2.class (
 }
 ```
 
-#### 5.1.2. 错误 `Decode error - output not utf-8`
+### 4.6. 按语法类型配置 Sublime
+
+打开要配置的语法类型文件，选择 `Preferences -> Settings - More -> Syntax Specific - User`，然后添加配置语句就可以了，配置文件保存在用户目录。
+
+## 5. 问题
+
+### 5.1. 错误 `Decode error - output not utf-8`
 
 
 同上，将语言脚本最后一行增加 `"encoding": "gbk"`，意义是将输出编码定义为本地中文代码页。编译运行程序时发生 `[Decode error - output not utf-8]` 错误，都可以用此方法解决问题。
