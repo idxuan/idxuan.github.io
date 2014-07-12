@@ -267,7 +267,13 @@ share: true
 
 ### 4.2. Sublime Text 参数配置
 
+#### 4.2.1. Sublime Text 全局参数配置
+
 菜单选择“Preferences”->“Settings-User”，粘贴并修改为你自己习惯的即可。
+
+#### 4.2.2. Sublime Text 语法类型参数配置
+
+打开要配置的语法类型文件，选择 `Preferences -> Settings - More -> Syntax Specific - User`，然后添加配置语句就可以了，配置文件保存在用户目录。
 
 ### 4.3. 空格和Tab转换
 
@@ -314,10 +320,6 @@ IF EXIST %~n2.class (
     "encoding": "gbk"
 }
 ```
-
-### 4.6. Sublime 按语法类型配置
-
-打开要配置的语法类型文件，选择 `Preferences -> Settings - More -> Syntax Specific - User`，然后添加配置语句就可以了，配置文件保存在用户目录。
 
 ## 5. Sublime 错误
 
