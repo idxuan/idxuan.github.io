@@ -424,3 +424,11 @@ git stash pop
 * git stash pop: 从 Git 栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个 Stash 的内容，所以用栈来管理，pop 会从最近的一个 stash 中读取内容并恢复。
 * git stash list: 显示 Git 栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
 * git stash clear: 清空 Git 栈。此时使用 gitg 等图形化工具会发现，原来 stash 的哪些节点都消失了。
+
+## 7. Git Config 配置项
+
+### 7.1 默认远程
+
+```bash
+git config branch.master.remote origin
+```
