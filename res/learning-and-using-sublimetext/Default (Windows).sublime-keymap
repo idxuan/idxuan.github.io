@@ -50,22 +50,22 @@
     // 格式化选择行
     { "keys": ["ctrl+="], "command": "reindent" },
     // 格式化选区为 GitHub Flavored Markdown Code
-    { "keys": ["ctrl+;", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Format-GFM-Code.sublime-macro"} },
+    { "keys": ["ctrl+,", "ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Format-GFM-Code.sublime-macro"} },
     // 清除当前行
-    { "keys": ["ctrl+;", "ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Clean-Line.sublime-macro"} },
+    { "keys": ["ctrl+,", "ctrl+k"], "command": "run_macro_file", "args": {"file": "Packages/User/Xuan-Clean-Line.sublime-macro"} },
 
     //------------------------------------------------------------------
     // 文件编码GBK和UTF-8互相转换，需要“ConvertToUTF8”插件
     //------------------------------------------------------------------
-    { "keys": ["ctrl+;", "ctrl+alt+g"], "command": "convert_to_utf8", "args": {"encoding": "GBK", "stamp": "0" } },
-    { "keys": ["ctrl+;", "ctrl+alt+u"], "command": "convert_to_utf8", "args": {"encoding": "UTF-8", "stamp": "0" } },
+    { "keys": ["ctrl+,", "ctrl+alt+g"], "command": "convert_to_utf8", "args": {"encoding": "GBK", "stamp": "0" } },
+    { "keys": ["ctrl+,", "ctrl+alt+u"], "command": "convert_to_utf8", "args": {"encoding": "UTF-8", "stamp": "0" } },
 
     //------------------------------------------------------------------
     // 是否开启显示多余空格（需要“TrailingSpacer”插件）
     //------------------------------------------------------------------
-    { "keys": ["ctrl+;", "ctrl+shift+t"], "command": "toggle_trailing_spaces" },
+    { "keys": ["ctrl+,", "ctrl+shift+t"], "command": "toggle_trailing_spaces" },
     // 删除多余空格（需要“TrailingSpacer”插件）
-    { "keys": ["ctrl+;", "ctrl+shift+d"], "command": "delete_trailing_spaces" },
+    { "keys": ["ctrl+,", "ctrl+shift+d"], "command": "delete_trailing_spaces" },
 
     //------------------------------------------------------------------
     // 区块高亮（需要“BracketHighlighter”插件）
