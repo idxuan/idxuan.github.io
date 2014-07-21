@@ -56,7 +56,7 @@ share: true
 
 ### 2.2. 移动定位
 
-* **Ctrl+P,# 或 Ctrl+;**: 定位关键词
+* **Ctrl+P,# 或 Ctrl+,**: 定位关键词
 * **Ctrl+P,: 或 Ctrl+G**: 定位行
 * **Ctrl+P,@ 或 Ctrl+R**: 定位函数
 * **Ctrl+Shift+R**: 定位函数从项目
@@ -185,9 +185,9 @@ share: true
 * **!Ctrl+Alt+Shift+[H,L]**: 左右移动至上/下一个词并选择
 * **!Ctrl+Alt+[B,F]**: 导航历史前进/后退
 * **!Ctrl+=**: 格式化选择行
-* **!Ctrl+;, Ctrl+C**: 格式化选区为 GitHub Flavored Markdown Code
-* **!Ctrl+;, Ctrl+K**: 清除当前行
-* **!Ctrl+;, Ctrl+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
+* **!Ctrl+,, Ctrl+C**: 格式化选区为 GitHub Flavored Markdown Code
+* **!Ctrl+,, Ctrl+K**: 清除当前行
+* **!Ctrl+,, Ctrl+B**: 转换HTML代码段到CSDN博客格式（ToCsdnBlog）
 
 ### 2.15. 插件"BracketHighlighter"常用快捷键
 
@@ -201,7 +201,7 @@ share: true
 
 ### 2.16. 插件"TrailingSpaces"常用快捷键
 
-建议在默认快捷键前增加 `Ctrl+;` 形成组合快捷键
+建议在默认快捷键前增加 `Ctrl+,` 形成组合快捷键
 
 * **!Ctrl+Shift+T**: 开关显示多余空格
 * **!Ctrl+Shift+D**: 删除多余空格
@@ -213,8 +213,8 @@ share: true
 
 ### 2.18. 插件"ConvertToUTF8"常用快捷键
 
-* **!Ctrl+;, Ctrl+Alt+G**: 转换文件到 GBK
-* **!Ctrl+;, Ctrl+Alt+U**: 转换文件到 UTF-8
+* **!Ctrl+,, Ctrl+Alt+G**: 转换文件到 GBK
+* **!Ctrl+,, Ctrl+Alt+U**: 转换文件到 UTF-8
 
 ### 2.19. 插件"Alignment"常用快捷键
 
@@ -226,12 +226,12 @@ share: true
 
 ### 2.21. 插件"SublimeTmpl"常用快捷键
 
-* **!Ctrl+;, Ctrl+Shift+B**: 新建 Blog 模板文件
-* **!Ctrl+;, Ctrl+Shift+J**: 新建 Java 模板文件
-* **!Ctrl+;, Ctrl+Shift+G**: 新建 Go 模板文件
-* **!Ctrl+;, Ctrl+Shift+Y**: 新建 Python 模板文件
-* **!Ctrl+;, Ctrl+Shift+R**: 新建 Ruby 模板文件
-* **!Ctrl+;, Ctrl+Shift+M**: 新建 Markdown 模板文件
+* **!Ctrl+,, Ctrl+Shift+B**: 新建 Blog 模板文件
+* **!Ctrl+,, Ctrl+Shift+J**: 新建 Java 模板文件
+* **!Ctrl+,, Ctrl+Shift+G**: 新建 Go 模板文件
+* **!Ctrl+,, Ctrl+Shift+Y**: 新建 Python 模板文件
+* **!Ctrl+,, Ctrl+Shift+R**: 新建 Ruby 模板文件
+* **!Ctrl+,, Ctrl+Shift+M**: 新建 Markdown 模板文件
 
 ### 2.22. 插件"InsertNums"常用快捷键
 
@@ -241,7 +241,7 @@ share: true
 
 * `[A,B,C]` 表示A,B,C可选其一；
 * `Num` 表示阿拉伯数字;
-* `!` 前缀表示在原快捷键前增加 `Ctrl+;` 形成组合快捷键，或修改为建议快捷键。
+* `!` 前缀表示在原快捷键前增加 `Ctrl+,` 形成组合快捷键，或修改为建议快捷键。
 
 ## 3. Sublime Text 插件安装方式
 
