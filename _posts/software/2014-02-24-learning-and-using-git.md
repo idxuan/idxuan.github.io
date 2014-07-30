@@ -342,9 +342,17 @@ foo/
 !foo.txt
 ```
 
-## 6. Git 使用点滴
+## 6. Git Config 配置项
 
-### 6.1 系统警告：`LF will be replaced by CRLF`
+### 6.1 默认远程仓库
+
+```bash
+git config branch.master.remote origin
+```
+
+## 7. Git 使用点滴
+
+### 7.1 系统警告：`LF will be replaced by CRLF`
 
 **原因分析：**
 
@@ -377,7 +385,7 @@ git init
 git add .
 ```
 
-### 6.2 系统错误：`failed to push some refs to`
+### 7.2 系统错误：`failed to push some refs to`
 
 **原因分析：**
 
@@ -389,7 +397,7 @@ git add .
 2. 自动merge或手动merge冲突
 3. git push github master
 
-### 6.2 系统错误：`commit your changes or stash them before you can merge`
+### 7.2 系统错误：`commit your changes or stash them before you can merge`
 
 **原因分析：**
 
@@ -397,7 +405,7 @@ git add .
 
 **解决方法：**
 
-#### 6.2.1 放弃本地版本，获取远程仓库最新版本
+#### 7.2.1 放弃本地版本，获取远程仓库最新版本
 
 ```bash
 git reset --hard
@@ -410,7 +418,7 @@ git pull
 git checkout HEAD file/to/restore
 ```
 
-#### 6.2.2 使用 `git stash` 保留生产服务器上所做的改动,仅仅并入新配置项。
+#### 7.2.2 使用 `git stash` 保留生产服务器上所做的改动,仅仅并入新配置项。
 
 ```bash
 git stash
@@ -424,11 +432,3 @@ git stash pop
 * git stash pop: 从 Git 栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个 Stash 的内容，所以用栈来管理，pop 会从最近的一个 stash 中读取内容并恢复。
 * git stash list: 显示 Git 栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
 * git stash clear: 清空 Git 栈。此时使用 gitg 等图形化工具会发现，原来 stash 的哪些节点都消失了。
-
-## 7. Git Config 配置项
-
-### 7.1 默认远程仓库
-
-```bash
-git config branch.master.remote origin
-```
