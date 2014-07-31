@@ -14,8 +14,8 @@ encoding:    utf-8
 # Jekyll服务主机端口
 # host:        0.0.0.0
 #port: 4000
-url: http://idxuan.github.io
-# url: http://localhost:4000
+# url: http://idxuan.github.io
+url: http://localhost:4000
 
 highlighter: pygments
 # show_drafts: nil
@@ -39,8 +39,8 @@ future: true
 #lsi: false
 
 # markdown: maruku
-markdown: redcarpet
-# markdown: rdiscount
+# markdown: redcarpet
+markdown: rdiscount
 # markdown: kramdown
 markdown_ext: md
 textile_ext: textile
