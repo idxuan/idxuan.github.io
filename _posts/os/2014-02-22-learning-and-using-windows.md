@@ -1,68 +1,109 @@
 ---
 layout: post
-category: æ“ä½œç³»ç»Ÿ
-title: Windows å­¦ä¹ åŠä½¿ç”¨
-tags : [Windows,æ“ä½œç³»ç»Ÿ]
+category: ²Ù×÷ÏµÍ³
+title: Windows Ñ§Ï°¼°Ê¹ÓÃ
+tags : [Windows,²Ù×÷ÏµÍ³]
 image:
     feature: feature.jpg
 comments: true
 share: true
 ---
 
-## 1. æ¦‚è¿°
+## 1. ¸ÅÊö
 
-## 2. è®¾ç½®åº“
+## 2. ÉèÖÃ¿â
 
-ä½¿ç”¨â€œmlinkâ€å»ºç«‹é“¾æŽ¥ç›®å½•ï¼Œé¿å¼€ç³»ç»Ÿç›˜ã€‚
+Ê¹ÓÃ¡°mlink¡±½¨Á¢Á´½ÓÄ¿Â¼£¬±Ü¿ªÏµÍ³ÅÌ¡£
 
 ```bat
 mlink /j link_dir original_dir
 ```
 
-## 3. ç‰¹æ®Šæ–‡ä»¶å¤„ç†
+## 3. ÌØÊâÎÄ¼þ´¦Àí
 
-é€šè¿‡æ–‡ä»¶çš„â€œéšè—å±žæ€§â€å’Œâ€œè‡ªå®šä¹‰å±žæ€§â€ä¸­â€œæ¢å¤é»˜è®¤å›¾æ ‡â€æ¥å¤„ç†ç³»ç»Ÿé“¾æŽ¥æ–‡ä»¶ã€‚
+Í¨¹ýÎÄ¼þµÄ¡°Òþ²ØÊôÐÔ¡±ºÍ¡°×Ô¶¨ÒåÊôÐÔ¡±ÖÐ¡°»Ö¸´Ä¬ÈÏÍ¼±ê¡±À´´¦ÀíÏµÍ³Á´½ÓÎÄ¼þ¡£
 
-## 4. å®‰è£…è‡ªå®šä¹‰å­—ä½“
+## 4. ×Ô¶¨Òå×ÖÌå
 
-## 5. ä¿®æ”¹ Windows 7 æŽ§åˆ¶å°ï¼ˆCMDï¼‰çš„å­—ä½“
+### 4.1. ×ÖÌå `Consolas` Á´½Óµ½ÖÐÎÄ×ÖÌå
 
-### 5.1. æ£€æŸ¥æ³¨å†Œè¡¨ï¼Œç³»ç»Ÿé‡Œå­˜åœ¨çš„â€œTrueTypeâ€å­—ä½“
+Èç¹û×ÖÌå `Consolas` ÖÐÎÄ×ÖÌåÁ´½Óµ½ÑÅÎ¢ÈíºÚ£¬ÖÐÎÄ×ÖÌå»áÂÔ±â£¬±à¼­×¢²á±í
+
+```registry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
+```
+
+ÐÂ½¨Ò»Ìõ ¡°¶à×Ö·û´®Öµ¡±Ãû³ÆÎª ¡°Consolas¡±£¬ÏÂÁÐ¿ÉÑ¡Ïî
+
+```
+MSYH.TTC,Microsoft YaHei,112,110 //×ÖºÅ£º9¡¢10¡¢11¡¢14
+MSYH.TTC,Microsoft YaHei,120,100 //×ÖºÅ£º10¡¢12
+MSYH.TTC,Microsoft YaHei,128,96  //×ÖºÅ£º9¡¢11
+MSYH.TTC,Microsoft YaHei
+SIMYOU.TTF,YouYuan
+SIMSUN.TTC,NSimSun
+```
+
+ÐÂ½¨Ò»Ìõ ¡°¶à×Ö·û´®Öµ¡±Ãû³ÆÎª ¡°Consolas Bold¡±£¬ÏÂÁÐ¿ÉÑ¡Ïî
+
+```
+MSYHBD.TTC,Microsoft YaHei Bold,112,110 //×ÖºÅ£º9¡¢10¡¢11¡¢14
+MSYHBD.TTC,Microsoft YaHei Bold,120,100 //×ÖºÅ£º10¡¢12
+MSYHBD.TTC,Microsoft YaHei Bold,128,96  //×ÖºÅ£º9¡¢11
+MSYHBD.TTC,Microsoft YaHei Bold
+SIMYOU.TTF,YouYuan
+SIMSUN.TTC,NSimSun
+```
+
+ÍÆ¼öµÄÖÐÎÄ×ÖÌåÁ´½ÓÅäÖÃ
+
+```
+Comic Sans MS = MSYH.TTF,128,96
+Trebuchet MS = MSYH.TTF
+Consolas = SIMYOU.TTF       //ÇáÎ¢±â
+Lucida Console = SIMYOU.ttf //ÂÔ±â
+Verdana = SIMYOU.TTF
+Monaco = SIMYOU.TTF         //ÂÔÕ­
+```
+
+## 5. ÐÞ¸Ä Windows 7 ¿ØÖÆÌ¨£¨CMD£©µÄ×ÖÌå
+
+### 5.1. ¼ì²é×¢²á±í£¬ÏµÍ³Àï´æÔÚµÄ¡°TrueType¡±×ÖÌå
 
 ```registry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\fonts]
 ```
 
-### 5.2. æ‰“å¼€æ³¨å†Œè¡¨å¹¶å¤‡ä»½
+### 5.2. ´ò¿ª×¢²á±í²¢±¸·Ý
 
 ```registry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Console\TrueTypeFont]
 ```
 
-### 5.3. å¢žåŠ å­é¡¹åä¸ºâ€œ0936â€çš„æŽ§åˆ¶å°â€œç®€ä½“ä¸­æ–‡ä»£ç é¡µâ€å­—ä½“ï¼Œå€¼ä¸ºç³»ç»Ÿé‡Œå­˜åœ¨çš„â€œTrueTypeâ€å­—ä½“åç§°ã€‚ä¹Ÿå¯ä»¥æ–°å¢žå­é¡¹åä¸ºâ€œ000â€çš„æŽ§åˆ¶å°â€œç¾Žå›½ä»£ç é¡µâ€å­—ä½“
+### 5.3. Ôö¼Ó×ÓÏîÃûÎª¡°0936¡±µÄ¿ØÖÆÌ¨¡°¼òÌåÖÐÎÄ´úÂëÒ³¡±×ÖÌå£¬ÖµÎªÏµÍ³Àï´æÔÚµÄ¡°TrueType¡±×ÖÌåÃû³Æ¡£Ò²¿ÉÒÔÐÂÔö×ÓÏîÃûÎª¡°000¡±µÄ¿ØÖÆÌ¨¡°ÃÀ¹ú´úÂëÒ³¡±×ÖÌå
 
-### 5.4. ä¿®æ”¹æŽ§åˆ¶å°ï¼ˆCMDï¼‰é»˜è®¤å€¼çš„å­—ä½“
+### 5.4. ÐÞ¸Ä¿ØÖÆÌ¨£¨CMD£©Ä¬ÈÏÖµµÄ×ÖÌå
 
-#### 5.4.1 æ–¹å¼ä¸€ï¼šä¿®æ”¹æ³¨å†Œè¡¨ï¼š
+#### 5.4.1 ·½Ê½Ò»£ºÐÞ¸Ä×¢²á±í£º
 
 ```registry
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]
-"FaceName"="å­—ä½“åç§°"
+"FaceName"="×ÖÌåÃû³Æ"
 ```
 
-#### 5.4.2 æ–¹å¼äºŒï¼šå¢žåŠ æŽ§åˆ¶å°ï¼ˆCMDï¼‰å¿«æ·é”®ï¼Œä¿®æ”¹å¿«æ·é”®å±žæ€§åŠé»˜è®¤å€¼çš„å­—ä½“åç§°å’Œå¤§å°
+#### 5.4.2 ·½Ê½¶þ£ºÔö¼Ó¿ØÖÆÌ¨£¨CMD£©¿ì½Ý¼ü£¬ÐÞ¸Ä¿ì½Ý¼üÊôÐÔ¼°Ä¬ÈÏÖµµÄ×ÖÌåÃû³ÆºÍ´óÐ¡
 
-### 5.5. é‡æ–°å¯åŠ¨å®ŒæˆæŽ§åˆ¶å°çš„å­—ä½“çš„ä¿®æ”¹
+### 5.5. ÖØÐÂÆô¶¯Íê³É¿ØÖÆÌ¨µÄ×ÖÌåµÄÐÞ¸Ä
 
-## 6. é€šè¿‡å¢žåŠ æ³¨å†Œè¡¨é¡¹ï¼Œä½¿å³é”®èœå•æ‰“å¼€æŽ§åˆ¶å°ï¼ˆCMDï¼‰åœ¨å½“å‰ç›®å½•
+## 6. Í¨¹ýÔö¼Ó×¢²á±íÏî£¬Ê¹ÓÒ¼ü²Ëµ¥´ò¿ª¿ØÖÆÌ¨£¨CMD£©ÔÚµ±Ç°Ä¿Â¼
 
 ```registry
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\opencmd]
-@="æ‰“å¼€ç”¨ CMD"
+@="´ò¿ªÓÃ CMD"
 [HKEY_CLASSES_ROOT\Directory\shell\opencmd\command]
 @="cmd.exe /k cd %1"
 ```

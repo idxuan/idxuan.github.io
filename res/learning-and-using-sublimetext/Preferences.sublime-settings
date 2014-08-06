@@ -19,10 +19,9 @@
     "soda_classic_tabs": true,
     "soda_folder_icons": true,
     //------------------------------------------------------------------
-    // 字体，我自己修改的字体，你可以修改成自己喜欢的或直接注释即可
+    // 字体
     //------------------------------------------------------------------
-    "font_face": "YaHei Consolas HB",
-    // "font_face": "Consolas",
+    "font_face": "Consolas",
     "font_size": 14,
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
     // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
@@ -31,23 +30,36 @@
     //------------------------------------------------------------------
     // Tab
     //------------------------------------------------------------------
-    // Tab大小
-    "tab_size": 4,
     // 转换Tab为空格
     "translate_tabs_to_spaces": true,
+    // 载入的时候检测制表符和空格
+    "detect_indentation": true,
+    // Tab 占位数
+    "tab_size": 4,
     // translate_tabs_to_spaces设置为true，Tab和Backspace的删除/插入作用于制表符宽度
     // 否则作用于单个空格
     "use_tab_stops": true,
     // 设置为enabled时，在一个字符串间按Tab将插入一个制表符
     // 设置为true时，按Tab会根据前后环境进行代码自动匹配填补
     "tab_completion": true,
-    // 载入的时候检测制表符和空格
-    "detect_indentation": true,
+    // 允许反缩进
+    "shift_tab_unindent": true,
+    // 自动删除尾部空格
+    "trim_automatic_white_space": true,
+    // 保存是删除尾部空格
+    "trim_trailing_white_space_on_save": true,
+
+    //------------------------------------------------------------------
+    // Other
     //------------------------------------------------------------------
     // Determines what character(s) are used to terminate each line in new files.
     // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
     // 'unix' (LF only).
     "default_line_ending": "unix",
+    // Display file encoding in the status bar
+    "show_encoding": true,
+    // Display line endings in the status bar
+    "show_line_endings": true,
     // 高亮当前行
     "highlight_line": true,
     // 高亮列

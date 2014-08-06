@@ -21,7 +21,7 @@ share: true
 
 快捷键查阅了 Sublime Text 的 keymap 文件，实际试用后编写。
 
-配置文件中字体是我在网上找到的“雅黑+Consolas”编程字体，自己修改了一些不喜欢的地方，见下图。你可以变更配置文件为自己喜欢的或直接注释即可。
+配置文件中字体是我在网上找到的 “YaHei Mono” 等宽中文字体，见下图。你可以变更配置文件为自己喜欢的或直接注释即可。
 
 ![Sublime Text3字体图片](/res/learning-and-using-sublimetext/sublime-text-full-screen.jpg "Sublime Text字体图片")
 
