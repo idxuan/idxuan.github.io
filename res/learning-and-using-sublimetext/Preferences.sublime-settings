@@ -43,7 +43,7 @@
     // 保存时删除尾部空格
     "trim_trailing_white_space_on_save": true,
     // 保存时在最后一行添加换行
-    "ensure_newline_at_eof_on_save": true,
+    "ensure_newline_at_eof_on_save": false,
 
     //------------------------------------------------------------------
     // Other
