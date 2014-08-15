@@ -3,20 +3,22 @@
 // @Link    : http://idxuan.github.io
 // @Date    : 2014-05-30
 // @Version : 0.0.3
-// @Desc    : 我的Sublime Text配置
+// @Desc    : My Sublime Text 3 Settings
 //----------------------------------------------------------------------
 
 {
     //------------------------------------------------------------------
-    // 颜色主题，需要“theme-soda”插件，并放置“colour-schemes”在User目录下
+    // Theme
     //------------------------------------------------------------------
+    // Need to plug-in support
     "theme": "Soda SolarizedDark.sublime-theme",
-    "color_scheme": "Packages/User/Xuan-Solarized-Dark.tmTheme",
     "soda_classic_tabs": true,
     "soda_folder_icons": true,
+    // Place the "schemes" to the “User” directory
+    "color_scheme": "Packages/User/Xuan-Solarized-Dark.tmTheme",
 
     //------------------------------------------------------------------
-    // 字体
+    // Font
     //------------------------------------------------------------------
     "font_face": "Consolas",
     "font_size": 14,
@@ -24,59 +26,98 @@
     //------------------------------------------------------------------
     // Tab
     //------------------------------------------------------------------
-    // 转换Tab为空格
-    "translate_tabs_to_spaces": true,
-    // 载入的时候检测制表符和空格
-    "detect_indentation": true,
-    // Tab 占位数
+    // The number of spaces a tab is considered equal to
     "tab_size": 4,
-    // translate_tabs_to_spaces设置为true，Tab和Backspace的
-    // 删除/插入作用于制表符宽度，否则作用于单个空格
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and
+    // backspace insert/delete up to the next tabstop
     "use_tab_stops": true,
-    // 设置为enabled时，在一个字符串间按Tab将插入一个制表符
-    // 设置为true时，按Tab会根据前后环境进行代码自动匹配填补
+    // When enabled, pressing tab will insert the best matching completion.
+    // When disabled, tab will only trigger snippets or insert a tab.
+    // Shift+tab can be used to insert an explicit tab when tab_completion is
+    // enabled.
     "tab_completion": true,
-    // 允许反缩进
+    // By default, shift+tab will only unindent if the selection spans
+    // multiple lines. When pressing shift+tab at other times, it'll insert a
+    // tab character - this allows tabs to be inserted when tab_completion is
+    // enabled. Set this to true to make shift+tab always unindent, instead of
+    // inserting tabs.
     "shift_tab_unindent": true,
-    // 自动删除尾部空格
-    "trim_automatic_white_space": true,
-    // 保存时删除尾部空格
-    "trim_trailing_white_space_on_save": true,
-    // 保存时在最后一行添加换行
-    "ensure_newline_at_eof_on_save": false,
 
     //------------------------------------------------------------------
-    // Other
+    // Indent
     //------------------------------------------------------------------
-    // 默认换行：'system' 'windows' 'unix'
+    // Set to false to disable detection of tabs vs. spaces on load
+    "detect_indentation": true,
+    // Calculates indentation automatically when pressing enter
+    "auto_indent": true,
+    // Makes auto indent a little smarter, e.g., by indenting the next line
+    // after an if statement in C. Requires auto_indent to be enabled.
+    "smart_indent": true,
+    // Adds whitespace up to the first open bracket when indenting. Requires
+    // auto_indent to be enabled.
+    "indent_to_bracket": false,
+
+    //------------------------------------------------------------------
+    // Line Column Wrap
+    //------------------------------------------------------------------
+    // If enabled, will highlight any line with a caret
+    "highlight_line": true,
+    // Columns in which to display vertical rulers
+    "rulers": [72],
+    // Set to false to disable scrolling past the end of the buffer.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
+    "scroll_past_end": false,
+    // Disables horizontal scrolling if enabled.
+    // May be set to true, false, or "auto", where it will be disabled for
+    // source code, and otherwise enabled.
+    "word_wrap"      : true,
+    // Set to a value other than 0 to force wrapping at that column rather than the
+    // window width
+    "wrap_width"     : 0,
+    // Determines what character(s) are used to terminate each line in new files.
+    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
+    // 'unix' (LF only).
     "default_line_ending": "unix",
-    // 编码无法检测时的默认编码
-    "fallback_encoding": "unix",
-    // Display file encoding in the status bar
-    "show_encoding": true,
     // Display line endings in the status bar
     "show_line_endings": true,
-    // 高亮当前行
-    "highlight_line": true,
-    // 高亮列
-    "rulers": [72],
-      // 高亮已修改未保存文件标签
+
+    //------------------------------------------------------------------
+    // Misc
+    //------------------------------------------------------------------
+    // The encoding to use when the encoding can't be determined automatically.
+    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
+    "fallback_encoding": "Western (Windows 1252)",
+    // Encoding used when saving new files, and files opened with an undefined
+    // encoding (e.g., plain ascii files). If a file is opened with a specific
+    // encoding (either detected or given explicitly), this setting will be
+    // ignored, and the file will be saved with the encoding it was opened
+    // with.
+    "default_encoding": "UTF-8",
+    // Files containing null bytes are opened as hexadecimal by default
+    "enable_hexadecimal_encoding": true,
+    // Display file encoding in the status bar
+    "show_encoding": true,
+    // Trims white space added by auto_indent when moving the caret off the
+    // line.
+    "trim_automatic_white_space": true,
+    // Set to true to removing trailing white space on save
+    "trim_trailing_white_space_on_save": true,
+    // Set to true to ensure the last line of the file ends in a newline
+    // character when saving
+    "ensure_newline_at_eof_on_save": false,
+    // Makes tabs with modified files more visible
     "highlight_modified_tabs": true,
-    // 特殊显示匹配区块符号（“BracketHighlighter”插件有类似功能，
-    // 设置 False，可以针对语法类型单独设置）
+    // Set to false to disable underlining the brackets surrounding the caret
     "match_brackets": false,
-    // 非光标在区块符号两端才特殊显示
+    // Set to false if you'd rather only highlight the brackets when the caret is
+    // next to one
     "match_brackets_content": true,
-    // 滚动超过结束行
-    "scroll_past_end": false,
-    // 是否自动换行，值为true，禁用水平滚动；值为false，水平滚动。
-    // 值为"auto"，需要加双引号，文件是源代码设置为false，否则true。
-    "word_wrap"      : true,
-    // 设置窗口内文字区域的宽度
-    "wrap_width"     : 0,
-    // 词的分符隔定义，加入中文符号
+    // Characters that are considered to separate words
     "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?，。：；‘’“”、？！￥…（）—《》「」『』【】",
-    // 自动完成开关
+    // Additional situations to trigger auto complete
     "auto_complete_triggers":
     [
         {
@@ -84,9 +125,26 @@
             "selector": "text.html"
         }
     ],
+    // folder_exclude_patterns and file_exclude_patterns control which files
+    // are listed in folders on the side bar. These can also be set on a per-
+    // project basis.
+    "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
+    "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
+    // These files will still show up in the side bar, but won't be included in
+    // Goto Anything or Find in Files
+    "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+    // index_exclude_patterns indicate which files won't be indexed.
+    "index_exclude_patterns": ["*.log"],
+    // List any packages to ignore here. When removing entries from this list,
+    // a restart may be required if the package contains plugins.
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
 
     //------------------------------------------------------------------
-    // Vintage 包括基本的命令:
+    // Vintage
+    //------------------------------------------------------------------
     // d (delete), y (copy), c (change),
     // gu (lower case), gU (upper case), g~ (swap case),
     // g? (rot13), < (unindent), and > (indent).
@@ -98,7 +156,10 @@
     // 支持 ('.') 重复命令, 支持指定数量的命令和动作。支持寄存器、宏和书签。
     // 支持其他杂项命令和 *, /, n, N, s, S 等……
     //------------------------------------------------------------------
-    // 开关 Vintage 的 Ctrl 键，与 Sublime 有冲突
+    // Enables/disables standard Vi key bindings including the Ctrl modifier
+    // that may override some platform-specific conventions.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
     // Ctrl+[: Escape
     // Ctrl+R: Redo
     // Ctrl+Y: Scroll down one line
@@ -106,11 +167,9 @@
     // Ctrl+F: Page Down
     // Ctrl+B: Page Up
     "vintage_ctrl_keys": false,
-    // 开关 Vintage 默认启动命令模式
-    "vintage_start_in_command_mode": true,
-    // 要忽略的插件，需要重启
-    "ignored_packages":
-    [
-        "Vintage"
-    ]
+    // Always propagate copied text to the system clipboard.
+    "vintage_use_clipboard": false,
+    // Whether to enter command mode when opening a file.
+    "vintage_start_in_command_mode": false
+
 }

@@ -118,7 +118,7 @@ share: true
 * **Ctrl+F**: 查找
 * **Ctrl+H**: 查找替换
 * **Ctrl+Shift+F**: 查找或替换，可选文件夹或过滤器
-* **!Ctrl+I**: 新查找（建议：Alt+I）
+* **Ctrl+I**: 新查找
 * **F3**: 查找下一个
 * **Shift+F3**: 查找上一个
 

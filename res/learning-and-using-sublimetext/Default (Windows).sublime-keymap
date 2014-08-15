@@ -15,8 +15,6 @@
     // 关闭所有
     { "keys": ["ctrl+shift+w"], "command": "close_all" },
     { "keys": ["ctrl+0"], "command": "close_all" },
-    // 新查找
-    { "keys": ["alt+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
 
     //------------------------------------------------------------------
     // 自定义移动选择快捷键
