@@ -56,7 +56,7 @@ share: true
 
 ### 2.2. 移动定位
 
-* **Ctrl+P,# 或 Ctrl+,**: 定位关键词
+* **Ctrl+P,# 或 Ctrl+;**: 定位关键词
 * **Ctrl+P,: 或 Ctrl+G**: 定位行
 * **Ctrl+P,@ 或 Ctrl+R**: 定位函数
 * **Ctrl+Shift+R**: 定位函数从项目
