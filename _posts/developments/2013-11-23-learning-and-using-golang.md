@@ -11,7 +11,15 @@ share: true
 
 ## 1. 概述
 
-## 2. Golang 使用点滴
+## 2. Golang 安装
+
+## 2.1. Windows 平台安装
+
+## 2.2. Linux 平台安装
+
+
+
+## 3. Golang 使用点滴
 
 ### mymysql调用提示错误
 
