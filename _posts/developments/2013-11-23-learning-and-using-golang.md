@@ -13,11 +13,36 @@ share: true
 
 ## 2. Golang 安装
 
-## 2.1. Windows 平台安装
+### 2.1. Windows 平台安装
 
-## 2.2. Linux 平台安装
+### 2.2. Linux 平台安装
+
+**下载安装**
+
+```bash
+sudo add-apt-repository ppa:gophers/go
+sudo apt-get update
+sudo apt-get install golang-stable
+```
+
+或
+
+```bash
+sudo apt-get install golang
+```
 
 
+**环境配置**
+
+```cfg
+export Dev_Lib=$HOME/UserData/Work/DevelopLibraries
+export GOROOT=/usr/lib/go
+export GOARCH=amd64
+export GOOS=linux
+export GOPATH=%Dev_Lib%/Golang/3rd:%Dev_Lib%/Golang/own:$HOME/UserData/Work/Codes/Golang/example
+export GOBIN=$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
+```
 
 ## 3. Golang 使用点滴
 
