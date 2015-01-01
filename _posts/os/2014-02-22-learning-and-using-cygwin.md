@@ -35,7 +35,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # 定义用户HOME环境变量
-HOME='/cygdrive/d/UserData/LinuxHome/xuan'
+HOME='/cygdrive/d/LinuxHome/xuan'
 
 # Interactive operation...
 # alias rm='rm -i'

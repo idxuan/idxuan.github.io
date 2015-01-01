@@ -15,6 +15,8 @@ share: true
 
 ### 2.1. 初始化配置：
 
+进入 Git Bash，运行下列命令
+
 ```bash
 #配置ID
 git config --global user.name "your_id"
@@ -55,12 +57,11 @@ ssh -T git@github.com
 ### 2.3. 修改或新建 `/etc/fstab`，增加以下内容：
 
 ```
-d:/UserData/LinuxHome /home
-d:/UserData/Tech/Repositories/git /repo
-d:/UserData/Work/Projects /projects
-d:/UserData/Work/Codes /codes
+d:/LinuxHome /home
+d:/Works/Projects /projects
+d:/Works/Codes /codes
 e:/Downloads /dl
-f:/Repositories/git /lrepo
+f:/Repositories/git /local_git
 ```
 
 ### 2.4. 设置全局配置文件 `/etc/profile`：
@@ -71,10 +72,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # 定义用户HOME环境变量
-#export HOME='/d/Platform/home/BuXing'
+#export HOME='/d/LinuxHome/xuan'
 export VIM='/usr/share/vim'
-export VIMRUNTIME='/usr/share/vim/vim73'
-export VIM_OWNS='~/.vim/vimowns'
+export VIMRUNTIME='/usr/share/vim/vim74'
 
 # 参数 --show-control-chars 正确显示中文
 alias ls='ls -hF --color=tty --show-control-chars'                 # classify files in colour
@@ -98,7 +98,7 @@ Windows Registry Editor Version 5.00
 @="d:\\GSoft\\Linux32\\MinGW\\git\\git-bash.bat %V"
 ```
 
-#### 2.5.2. 修改Cygwin.bat文件，增加设置路径变量 `set _T=%*`：
+#### 2.5.2. 修改 `git-bash.bat` 文件，增加设置路径变量 `set _T=%*`：
 
 ```bat
 @echo off
@@ -288,6 +288,49 @@ git push -u github master
 git checkout --orphan gh-pages
 ```
 
+### 3.17. 重置回滚
+
+重置回滚本地
+
+```bash
+git reset --hard 版本号
+```
+
+重置回滚远程
+
+```bash
+git push -f
+```
+
+然后每个本地都要执行 `git reset --hard 版本号` 操作。
+该方法只适合小的团队或者个人的项目使用，大的团队还是建议 `git reset --hard`版本号，然后比较多所有有变动的文件，然后覆盖回去，然后提交(commit)，然后push的远程。
+
+### 3.18. 强制覆盖本地文件
+
+1. `git fetch` 下载远程最新的，但不尝试或修改任何东西。 然后 `git reset master` 分支重置到刚才。
+
+```bash
+git fetch --all
+git reset --hard origin/master
+```
+
+
+2. 试试这个。
+
+```bash
+git reset --hard HEAD
+git pull
+```
+
+
+3. clean -f 如果您有未跟踪目录，还需要-d 选项。
+
+```bash
+git reset --hard HEAD
+git clean -f -d
+git pull
+```
+
 ## 4. GitHub创建步骤
 
 ### 4.1 Create a new repository on the command line
@@ -432,3 +475,67 @@ git stash pop
 * git stash pop: 从 Git 栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个 Stash 的内容，所以用栈来管理，pop 会从最近的一个 stash 中读取内容并恢复。
 * git stash list: 显示 Git 栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
 * git stash clear: 清空 Git 栈。此时使用 gitg 等图形化工具会发现，原来 stash 的哪些节点都消失了。
+
+### 7.3 关于回滚
+
+Git 的历史记录是不可修改的，也就是不能更改任何已经发生的事情。
+任何操作都只是在原来的操作上修改。也就是说，即使删除了一个分支，修改了一个提交，或者强制重置，仍然可以回滚这些操作。
+
+样例：
+
+```bash
+$ git init
+$ touch foo.txt
+$ git add foo.txt
+$ git commit -m "initial commit"
+
+$ echo 'new data' >> foo.txt
+$ git commit -a -m "more stuff added to foo"
+```
+
+现在看 Git 的历史记录，可以看到两次提交：
+
+```bash
+$ git log
+* 98abc5a (HEAD, master) more stuff added to foo
+* b7057a9 initial commit
+```
+
+现在重置回第一次提交的状态：
+
+```bash
+$ git reset --hard b7057a9
+$ git log
+* b7057a9 (HEAD, master) initial commit
+```
+
+这看起来是丢掉了第二次的提交，没有办法找回来了。但是 `reflog` 就是用来解决这个问题的。简单的说，它会记录所有 `HEAD` 的历史，也就是说当做 `reset`，`checkout`等操作的时候，这些操作会被记录在 `reflog` 中。
+
+```bash
+$ git reflog
+b7057a9 HEAD@{0}: reset: moving to b7057a9
+98abc5a HEAD@{1}: commit: more stuff added to foo
+b7057a9 HEAD@{2}: commit (initial): initial commit
+```
+
+所以要找回第二次 `commit`，只需要做如下操作：
+
+```bash
+$ git reset --hard 98abc5a
+```
+
+再来看一下 Git 记录：
+
+```bash
+$ git log
+* 98abc5a (HEAD, master) more stuff added to foo
+* b7057a9 initial commit
+```
+
+所以如果因为 `reset` 等操作丢失一个提交的时候，总是可以把它找回来。除非操作已经被 Git 当做垃圾处理掉了，一般是30天以后。
+
+### 7.4 Clone 错误 `does not appear to be a git repository`
+
+Clone 用绝对路径，不要使用相对路径
+错误：git@ip:gitosis-admin.git
+正确：git@ip:/home/git/repositories/gitosis-admin.git
